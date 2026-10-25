@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "CAP",
       "first_candle": "down",
       "h1": -1.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 10.7,
+      "status": "false",
       "time_utc": "2026-10-25 12:00"
     },
     {
@@ -27,11 +27,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 0,
-    "false_per_real": 0.0,
-    "known": 1,
+    "false": 1,
+    "false_per_real": 1.0,
+    "known": 2,
     "real": 1,
     "total": 2
   },
-  "updated_at": "2026-10-25T16:00:01+00:00"
+  "updated_at": "2026-10-25T17:00:01+00:00"
 }
