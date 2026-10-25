@@ -1,25 +1,37 @@
 {
   "signals": [
     {
-      "burst_1h": true,
+      "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "CAP",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-25 12:00"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": true,
       "coin": "JCT",
       "first_candle": "down",
       "h1": -11.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -1.8,
+      "status": "real",
       "time_utc": "2026-10-25 08:00"
     }
   ],
   "since": "2026-10-25",
   "summary": {
     "false": 0,
-    "false_per_real": null,
-    "known": 0,
-    "real": 0,
-    "total": 1
+    "false_per_real": 0.0,
+    "known": 1,
+    "real": 1,
+    "total": 2
   },
-  "updated_at": "2026-10-25T12:00:01+00:00"
+  "updated_at": "2026-10-25T13:00:02+00:00"
 }
