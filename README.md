@@ -44,7 +44,7 @@
 
 The site is a plain static website: no framework, no build step, no server. It is served by GitHub Pages and works both at the repository path (`/fatumon-site/`) and at the root of a custom domain, because every path is relative.
 
-- **Pages:** Home · About · How it works · Ecosystem · Roadmap · Token · Contact
+- **Pages:** Home · About · How it works · Ecosystem · Roadmap · Token · Contact · Terms · Privacy
 - **Languages:** Russian and English, switched on the client (`?lang=ru|en`, remembered in `localStorage`)
 - **Live counters:** read from [`stats.json`](stats.json), refreshed by a scheduled export (see below)
 - **Design:** dark space background with drifting glass panels and gold accents
@@ -61,8 +61,11 @@ The site is a plain static website: no framework, no build step, no server. It i
 ├── token/                Token
 ├── contact/              Contact
 ├── 404.html              Redirects to the home page, keeps ?lang
+├── terms/                Terms of Service (RU/EN blocks)
+├── privacy/              Privacy Policy (RU/EN blocks)
 ├── assets/
-│   ├── style.css         Design tokens, layout, responsive rules
+│   ├── fonts/            Self-hosted woff2 fonts + LICENSES.md
+│   ├── style.css         Design tokens, @font-face, layout, responsive rules
 │   ├── app.js            i18n, navigation, stars, counters, mascot
 │   ├── logo.svg          Logo
 │   └── favicon.svg       Favicon
@@ -130,6 +133,23 @@ python -I tools/check_texts.py
 ```
 
 It scans both dictionaries, this README and all HTML pages and exits with a non-zero code if any public text contains a forbidden word or pattern (promotional claims, dates, personal names and so on).
+
+## Fonts
+
+All fonts are self-hosted from `assets/fonts/` (latin + cyrillic subsets, woff2) and declared with `@font-face` in `assets/style.css` with `font-display: swap`. No request goes to Google Fonts, so visitors' IP addresses are not shared with a third party for typography.
+
+| Font | Use | License |
+|---|---|---|
+| Manrope (variable, 400–800) | text and headings | SIL OFL 1.1 |
+| JetBrains Mono (variable, 400–600) | tags, numbers, logo | SIL OFL 1.1 |
+| Press Start 2P | pixel-display labels | SIL OFL 1.1 |
+| VT323 | pixel-display numbers | SIL OFL 1.1 |
+
+License texts: [`assets/fonts/LICENSES.md`](assets/fonts/LICENSES.md).
+
+## Legal pages
+
+`terms/` and `privacy/` hold the Terms of Service and the Privacy Policy (version 0.1, drafts pending legal review). Their texts are long, so they live in the HTML as two language blocks (`data-lang-block="ru|en"`) that the language switcher shows and hides; titles and descriptions use the usual dictionaries.
 
 ## Deployment
 

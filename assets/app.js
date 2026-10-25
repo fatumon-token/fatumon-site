@@ -51,6 +51,10 @@
     document.querySelectorAll('[data-lang]').forEach(function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-lang') === LANG ? 'true' : 'false');
     });
+    // длинные тексты (условия, конфиденциальность) лежат в HTML блоками по языку
+    document.querySelectorAll('[data-lang-block]').forEach(function (b) {
+      b.hidden = b.getAttribute('data-lang-block') !== LANG;
+    });
     renderUpdated();
   }
 

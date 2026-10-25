@@ -182,5 +182,21 @@
 
   "notfound.title": "Page not found — Fatumon",
   "notfound.text": "This page does not exist. Taking you home…",
-  "notfound.link": "Go to the home page"
+  "notfound.link": "Go to the home page",
+
+  "common.footer.terms": "Terms",
+  "common.footer.privacy": "Privacy",
+  "common.footer.disclaimer": "Research platform, not financial advice. 18+",
+  "common.draft": "Version 0.1 — draft pending legal review",
+
+  "terms.title": "Terms of Service — Fatumon",
+  "terms.meta": "Fatumon Terms of Service: points, access token, game, information products, restrictions.",
+  "terms.tag": "// 07 · TERMS",
+  "terms.h1": "Terms of Service",
+
+  "privacy.title": "Privacy Policy — Fatumon",
+  "privacy.meta": "What data Fatumon processes, why, who receives it and what your rights are.",
+  "privacy.tag": "// 08 · PRIVACY",
+  "privacy.h1": "Privacy Policy",
+  "privacy.site.note": "The website fatumon.com stores only your language choice in localStorage (strictly necessary); there is no analytics and no cookie banner. Recipients of website data: GitHub Pages (hosting) and, when you contact us, Telegram and e-mail."
 }

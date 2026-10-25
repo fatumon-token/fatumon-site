@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="privacy.title">Политика конфиденциальности — Fatumon</title>
+<meta name="description" content="Какие данные обрабатывает Fatumon, зачем, кому передаёт и какие у вас права." data-i18n-attr="content:privacy.meta">
+<meta property="og:title" content="Политика конфиденциальности — Fatumon" data-i18n-attr="content:privacy.title">
+<meta property="og:description" content="Какие данные обрабатывает Fatumon, зачем, кому передаёт и какие у вас права." data-i18n-attr="content:privacy.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="privacy">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-head page-head-mascot">
+    <div>
+      <span class="tag" data-i18n="privacy.tag">// 08 · КОНФИДЕНЦИАЛЬНОСТЬ</span>
+      <h1 data-i18n="privacy.h1">Политика конфиденциальности</h1>
+    </div>
+    <div class="mascot mascot-sm">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+  <section class="wrap section legal" style="padding-top:8px">
+    <div class="draft-badge"><svg class="px-icon" style="--px:#ffb347" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM6 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1z" fill="currentColor"/></svg><span data-i18n="common.draft">Версия 0.1 — черновик до проверки юристом</span></div>
+    <section class="stack narrow" data-lang-block="ru" lang="ru">
+      <p class="note legal-note" data-i18n="privacy.site.note">Сайт fatumon.com хранит только выбор языка в localStorage (строго необходимое); аналитики и cookie-баннера на сайте нет. Получатели данных сайта: GitHub Pages (хостинг), а при обращении — Telegram и почта.</p>
+      <div class="card card-lg legal-card">
+        <p><strong>Дата вступления в силу:</strong> [дата] · <strong>Версия:</strong> [номер]</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>1. Кто обрабатывает данные (контролёр)</h2>
+        <p>1.1. Контролёр персональных данных: <strong class="todo">[плейсхолдер: до регистрации юридического лица — физическое лицо [ФИО], страна нахождения [указать]; после — [компания, номер, адрес]]</strong> (далее «мы»). <strong class="todo">[нужен юрист: кто контролёр до фирмы; формула перехода]</strong></p>
+        <p>1.2. Контакт по вопросам данных: <strong><a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a></strong> (обращения через Gmail обрабатываются Google LLC, США, как процессором).</p>
+        <p>1.3. Представитель в ЕС по ст. 27 GDPR: [назначается; имя и адрес будут опубликованы здесь]. <strong class="todo">[нужен юрист: нужен ли представитель]</strong></p>
+        <p>1.4. Ответственное лицо по защите данных: [контакт]. Формальный DPO не назначен. <strong class="todo">[нужен юрист]</strong></p>
+      </div>
+      <div class="card card-lg legal-card"><h2>2. Какие данные мы обрабатываем</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Категория</th><th>Что именно</th><th>Откуда</th></tr></thead><tbody><tr><td>Данные Telegram</td><td>Telegram ID, имя (first_name), username, язык интерфейса (language_code)</td><td>из initData Telegram Mini App / бота при запуске; подпись (hash, auth_date) используется только для проверки подлинности и не хранится</td></tr><tr><td>Игровые данные</td><td>прогнозы, Очки, серии, рейтинг, история сессий, время действий</td><td>ваши действия в Сервисе</td></tr><tr><td>Реферальные данные</td><td>кто кого пригласил, активность приглашённого</td><td>ваши действия</td></tr><tr><td>Платежи</td><td>идентификатор транзакции Telegram Stars, сумма, дата, товар</td><td>от Telegram при оплате Stars (данные карты мы не получаем)</td></tr><tr><td>Кошелёк</td><td>адрес кошелька TON (через TON Connect) и, при распределении, адрес в сети BNB Chain</td><td>вы подключаете сами</td></tr><tr><td>Технические данные</td><td>тип устройства/браузера, версия клиента Telegram, IP-адрес (у хостинга и бэкенда), страна по IP, журналы ошибок</td><td>автоматически</td></tr><tr><td>Сайт fatumon.com</td><td>строго необходимые cookie/localStorage (язык, тема, сессия); аналитика — только с вашего согласия, если будет включена</td><td>ваш браузер</td></tr><tr><td>Обращения</td><td>e-mail, текст обращения, вложения</td><td>вы пишете нам</td></tr><tr><td>Антифрод</td><td>флаги мультиаккаунтов, ботов, блокировок</td><td>формируем мы</td></tr></tbody></table></div>
+        <p>Мы <strong>не собираем</strong> фото профиля, статус Premium, разрешение на сообщения (allows_write_to_pm) без отдельной цели; не запрашиваем документы, дату рождения, данные карт.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>3. Цели и правовые основания (ст. 6 GDPR)</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Цель</th><th>Данные</th><th>Основание</th></tr></thead><tbody><tr><td>Создание аккаунта, работа Игры, Очки, рейтинг, Снимок и распределение Токена</td><td>данные Telegram, игровые, реферальные, кошелёк</td><td>ст. 6(1)(b) — исполнение договора (Условия использования)</td></tr><tr><td>Оплата Stars, возвраты, учёт</td><td>платежи</td><td>ст. 6(1)(b); ст. 6(1)(c) — юридическая обязанность (учёт)</td></tr><tr><td>Безопасность, защита от накрутки, мультиаккаунтов, ботов; стабильность сервиса; обобщённая статистика</td><td>технические, антифрод, игровые</td><td>ст. 6(1)(f) — законный интерес (честность распределения, защита сервиса); оценка интересов проведена</td></tr><tr><td>Ответы на обращения и запросы о правах</td><td>обращения</td><td>ст. 6(1)(b)/(f); ст. 6(1)(c)</td></tr><tr><td>Соблюдение санкционных и иных юридических требований</td><td>кошелёк, страна</td><td>ст. 6(1)(c)</td></tr><tr><td>Рассылки, необязательная аналитика сайта</td><td>контакт, cookie</td><td>ст. 6(1)(a) — согласие; отзыв в любой момент</td></tr></tbody></table></div>
+      </div>
+      <div class="card card-lg legal-card"><h2>4. Кому передаём данные (получатели)</h2>
+        <ul><li><strong>Telegram</strong> (платформа и платежи Stars) — по условиям Telegram; данные, которые вы передаёте самому Telegram, регулируются политикой Telegram.</li><li><strong>Хостинг сайта</strong> — GitHub Pages (GitHub, Inc., США).</li><li><strong>Хостинг бэкенда и базы данных</strong> — [провайдер, страна]. <strong class="todo">[заполнить]</strong></li><li><strong>Поставщики ИИ-моделей</strong> — Anthropic, PBC (США) для генерации пояснений (без передачи ваших идентификаторов, если не указано иное); модели с открытыми весами работают на нашей инфраструктуре.</li><li><strong>Аналитика сайта</strong> — [если будет; только с согласия].</li><li><strong>Блокчейн-сети BNB Chain / TON</strong> — при распределении Токена в публичную сеть попадают только адрес кошелька и сумма; эти записи публичны и <strong>необратимы, их нельзя удалить</strong>.</li><li><strong>Государственные органы</strong> — по законному требованию.</li></ul>
+        <p>Мы <strong>не продаём</strong> персональные данные и <strong>не используем</strong> их для обучения моделей или формирования датасетов. В магазине данных продаются только рыночные и аналитические данные без идентификаторов пользователей.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>5. Передача за пределы ЕС/ЕЭЗ</h2>
+        <p>Оператор и часть инфраструктуры находятся вне ЕС. Передачи осуществляются: в <strong>Израиль</strong> — на основании решения Еврокомиссии об адекватности (2011/61/EU, подтверждено 15.01.2024); в <strong>США</strong> — на основании сертификации получателя по EU-US Data Privacy Framework или стандартных договорных условий (ст. 46(2)(c) GDPR); в <strong>Таиланд</strong> и иные страны без решения об адекватности — на основании стандартных договорных условий с процессорами и/или ст. 49(1)(b) GDPR (необходимость для исполнения договора). <strong class="todo">[нужен юрист: квалификация потоков и механизмы]</strong></p>
+      </div>
+      <div class="card card-lg legal-card"><h2>6. Сроки хранения</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Данные</th><th>Срок</th></tr></thead><tbody><tr><td>Данные Telegram, игровые, реферальные</td><td>пока аккаунт активен + 12 месяцев неактивности, затем удаление или анонимизация</td></tr><tr><td>Подпись initData (hash)</td><td>не хранится; технический лог ≤ 30 дней</td></tr><tr><td>Платежи Stars</td><td>по требованиям бухгалтерского/налогового учёта юрисдикции контролёра [5–7 лет — уточнить]</td></tr><tr><td>Адрес кошелька</td><td>до завершения распределения + 12 месяцев (записи в блокчейне — бессрочно, вне нашего контроля)</td></tr><tr><td>Технические логи, IP</td><td>≤ 30–90 дней</td></tr><tr><td>Обращения</td><td>24 месяца после закрытия</td></tr><tr><td>Антифрод-флаги</td><td>срок аккаунта + 24 месяца</td></tr><tr><td>Cookie/localStorage</td><td>сессия / до очистки вами; аналитические — не более 13 месяцев</td></tr></tbody></table></div>
+      </div>
+      <div class="card card-lg legal-card"><h2>7. Ваши права (гл. III GDPR)</h2>
+        <p>Вы вправе: получить доступ к своим данным (ст. 15); исправить их (ст. 16); удалить (ст. 17 — кроме данных, которые мы обязаны хранить по закону или для защиты требований); ограничить обработку (ст. 18); получить данные в машиночитаемом виде (ст. 20); возразить против обработки на основании законного интереса (ст. 21); не быть объектом решения, основанного исключительно на автоматизированной обработке (ст. 22) — антифрод-блокировки и расчёт Очков автоматизированы, вы можете запросить пересмотр человеком; отозвать согласие (без влияния на прошлую обработку); подать жалобу в надзорный орган страны вашего проживания в ЕС.</p>
+        <p>Как реализовать: команда в боте [/privacy, /delete] или письмо на <a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a>. Срок ответа — не более 30 дней. Удаление аккаунта ведёт к аннулированию Очков.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>8. Дети</h2>
+        <p>Сервис предназначен для лиц 18 лет и старше. Мы не обрабатываем сознательно данные лиц младше 18 лет (младше 16 — порог согласия по ст. 8 GDPR). При выявлении — блокировка и удаление данных. Сообщить: <a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a>.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>9. Cookie и localStorage</h2>
+        <p>Сайт fatumon.com использует только строго необходимые cookie/localStorage (язык, тема, сессия) без запроса согласия (ст. 5(3) Директивы 2002/58/EC). Любая аналитика или сторонние скрипты включаются только после вашего согласия через баннер; вы можете отозвать его в настройках. Mini App хранит состояние игры в localStorage устройства как строго необходимое для работы.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>10. Безопасность</h2>
+        <p>Данные хранятся в зашифрованном виде, ключ шифрования — отдельно от данных; доступ ограничен; ведётся журнал инцидентов. При утечке, создающей риск для вас, мы уведомим надзорный орган в течение 72 часов (ст. 33 GDPR) и вас (ст. 34 GDPR; Telegram Bot Developer Terms §4.4).</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>11. Особенности Telegram и блокчейна</h2>
+        <p>11.1. Telegram может передавать нам ваш Telegram ID и username; данные, переданные вами самому Telegram, обрабатывает Telegram по своей политике.</p>
+        <p>11.2. Записи в публичных блокчейнах (адрес, сумма) публичны и необратимы; адрес кошелька может считаться псевдонимизированными персональными данными. Мы не записываем в блокчейн ничего, кроме адреса и суммы.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>12. Другие юрисдикции</h2>
+        <p><strong class="todo">[нужен юрист]</strong> Если применим Закон о защите персональных данных Таиланда B.E. 2562 (PDPA) или Закон о защите частной жизни Израиля 5741-1981, вы имеете соответствующие права по этим законам; обращайтесь по тому же адресу.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>13. Изменения</h2>
+        <p>Мы публикуем новую версию с датой и номером; о существенных изменениях уведомляем в Сервисе. Предыдущие версии доступны по запросу.</p>
+      </div>
+    </section>
+    <section class="stack narrow" data-lang-block="en" lang="en" hidden>
+      <p class="note legal-note" data-i18n="privacy.site.note">The website fatumon.com stores only your language choice in localStorage (strictly necessary); there is no analytics and no cookie banner. Recipients of website data: GitHub Pages (hosting) and, when you contact us, Telegram and e-mail.</p>
+      <div class="card card-lg legal-card">
+        <p><strong>Effective date:</strong> [date] · <strong>Version:</strong> [number]</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>1. Who processes your data (controller)</h2>
+        <p>1.1. Controller: <strong class="todo">[placeholder: until a legal entity is incorporated — an individual, [full name], country of location [specify]; thereafter — [company, number, address]]</strong> ("we"). <strong class="todo">[lawyer: controller before incorporation; transition clause]</strong></p>
+        <p>1.2. Data contact: <strong><a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a></strong> (messages via Gmail are processed by Google LLC, USA, as a processor).</p>
+        <p>1.3. EU representative under Art. 27 GDPR: [to be appointed; name and address will be published here]. <strong class="todo">[lawyer: whether a representative is required]</strong></p>
+        <p>1.4. Data protection contact: [contact]. No formal DPO has been designated. <strong class="todo">[lawyer]</strong></p>
+      </div>
+      <div class="card card-lg legal-card"><h2>2. What data we process</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Category</th><th>Details</th><th>Source</th></tr></thead><tbody><tr><td>Telegram data</td><td>Telegram ID, first name, username, interface language (language_code)</td><td>from Telegram Mini App / bot initData on launch; the signature (hash, auth_date) is used only to verify authenticity and is not stored</td></tr><tr><td>Game data</td><td>forecasts, Points, streaks, ranking, session history, timestamps</td><td>your actions in the Service</td></tr><tr><td>Referral data</td><td>who invited whom, the invitee's activity</td><td>your actions</td></tr><tr><td>Payments</td><td>Telegram Stars transaction ID, amount, date, item</td><td>from Telegram when paying with Stars (we do not receive card data)</td></tr><tr><td>Wallet</td><td>TON wallet address (via TON Connect) and, for distribution, a BNB Chain address</td><td>connected by you</td></tr><tr><td>Technical data</td><td>device/browser type, Telegram client version, IP address (at hosting and backend), country by IP, error logs</td><td>automatically</td></tr><tr><td>Website fatumon.com</td><td>strictly necessary cookies/localStorage (language, theme, session); analytics — only with your consent, if enabled</td><td>your browser</td></tr><tr><td>Enquiries</td><td>e-mail, message text, attachments</td><td>you write to us</td></tr><tr><td>Anti-fraud</td><td>multi-account, bot and blocking flags</td><td>generated by us</td></tr></tbody></table></div>
+        <p>We <strong>do not collect</strong> profile photo, Premium status or message permission (allows_write_to_pm) without a specific purpose; we do not request ID documents, date of birth or card data.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>3. Purposes and legal bases (Art. 6 GDPR)</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Purpose</th><th>Data</th><th>Basis</th></tr></thead><tbody><tr><td>Account creation, Game operation, Points, ranking, Snapshot and Token distribution</td><td>Telegram, game, referral, wallet data</td><td>Art. 6(1)(b) — performance of a contract (Terms of Service)</td></tr><tr><td>Stars payments, refunds, accounting</td><td>payments</td><td>Art. 6(1)(b); Art. 6(1)(c) — legal obligation (accounting)</td></tr><tr><td>Security, protection against point farming, multi-accounts, bots; service stability; aggregated statistics</td><td>technical, anti-fraud, game data</td><td>Art. 6(1)(f) — legitimate interest (fair distribution, protection of the service); balancing test performed</td></tr><tr><td>Responding to enquiries and rights requests</td><td>enquiries</td><td>Art. 6(1)(b)/(f); Art. 6(1)(c)</td></tr><tr><td>Sanctions and other legal compliance</td><td>wallet, country</td><td>Art. 6(1)(c)</td></tr><tr><td>Newsletters, optional website analytics</td><td>contact, cookies</td><td>Art. 6(1)(a) — consent; withdrawable at any time</td></tr></tbody></table></div>
+      </div>
+      <div class="card card-lg legal-card"><h2>4. Recipients</h2>
+        <ul><li><strong>Telegram</strong> (platform and Stars payments) — under Telegram's terms; data you provide to Telegram itself is governed by Telegram's policy.</li><li><strong>Website hosting</strong> — GitHub Pages (GitHub, Inc., USA).</li><li><strong>Backend and database hosting</strong> — [provider, country]. <strong class="todo">[fill in]</strong></li><li><strong>AI model providers</strong> — Anthropic, PBC (USA) for generating explanations (without your identifiers unless stated otherwise); open-weight models run on our own infrastructure.</li><li><strong>Website analytics</strong> — [if any; only with consent].</li><li><strong>BNB Chain / TON blockchain networks</strong> — on Token distribution only the wallet address and amount enter the public network; these records are public and <strong>irreversible and cannot be deleted</strong>.</li><li><strong>Public authorities</strong> — upon lawful request.</li></ul>
+        <p>We <strong>do not sell</strong> personal data and <strong>do not use</strong> it to train models or build datasets. The data marketplace sells only market and analytical data without user identifiers.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>5. Transfers outside the EU/EEA</h2>
+        <p>The Operator and part of the infrastructure are located outside the EU. Transfers are made: to <strong>Israel</strong> — under the European Commission adequacy decision (2011/61/EU, confirmed 15 Jan 2024); to the <strong>USA</strong> — under the recipient's EU-US Data Privacy Framework certification or standard contractual clauses (Art. 46(2)(c) GDPR); to <strong>Thailand</strong> and other countries without an adequacy decision — under standard contractual clauses with processors and/or Art. 49(1)(b) GDPR (necessity for performance of a contract). <strong class="todo">[lawyer: qualification of data flows and mechanisms]</strong></p>
+      </div>
+      <div class="card card-lg legal-card"><h2>6. Retention</h2>
+        <div class="tbl-wrap"><table><thead><tr><th>Data</th><th>Period</th></tr></thead><tbody><tr><td>Telegram, game, referral data</td><td>while the account is active + 12 months of inactivity, then deletion or anonymisation</td></tr><tr><td>initData signature (hash)</td><td>not stored; technical log ≤ 30 days</td></tr><tr><td>Stars payments</td><td>per accounting/tax requirements of the controller's jurisdiction [5–7 years — to confirm]</td></tr><tr><td>Wallet address</td><td>until distribution is complete + 12 months (blockchain records — indefinitely, outside our control)</td></tr><tr><td>Technical logs, IP</td><td>≤ 30–90 days</td></tr><tr><td>Enquiries</td><td>24 months after closure</td></tr><tr><td>Anti-fraud flags</td><td>account lifetime + 24 months</td></tr><tr><td>Cookies/localStorage</td><td>session / until cleared by you; analytics — no longer than 13 months</td></tr></tbody></table></div>
+      </div>
+      <div class="card card-lg legal-card"><h2>7. Your rights (Chapter III GDPR)</h2>
+        <p>You have the right to: access your data (Art. 15); rectify it (Art. 16); erase it (Art. 17 — except data we must retain by law or for the defence of claims); restrict processing (Art. 18); receive your data in a machine-readable format (Art. 20); object to processing based on legitimate interest (Art. 21); not be subject to a decision based solely on automated processing (Art. 22) — anti-fraud blocks and Point calculations are automated and you may request human review; withdraw consent (without affecting prior processing); lodge a complaint with the supervisory authority of your EU country of residence.</p>
+        <p>How to exercise: the bot command [/privacy, /delete] or an e-mail to <a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a>. Response time — no more than 30 days. Deleting the account cancels Points.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>8. Children</h2>
+        <p>The Service is intended for persons aged 18 or over. We do not knowingly process data of persons under 18 (under 16 is the consent threshold under Art. 8 GDPR). If identified — blocking and deletion. Report to: <a href="mailto:fatumon.token@gmail.com">fatumon.token@gmail.com</a>.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>9. Cookies and localStorage</h2>
+        <p>The website fatumon.com uses only strictly necessary cookies/localStorage (language, theme, session) without requesting consent (Art. 5(3) Directive 2002/58/EC). Any analytics or third-party scripts are enabled only after your consent via the banner; you may withdraw it in settings. The Mini App stores game state in the device's localStorage as strictly necessary for operation.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>10. Security</h2>
+        <p>Data is stored encrypted with the encryption key kept separately from the data; access is restricted; an incident log is maintained. In the event of a breach posing a risk to you, we will notify the supervisory authority within 72 hours (Art. 33 GDPR) and you (Art. 34 GDPR; Telegram Bot Developer Terms §4.4).</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>11. Telegram and blockchain specifics</h2>
+        <p>11.1. Telegram may share your Telegram ID and username with us; data you provide to Telegram itself is processed by Telegram under its own policy.</p>
+        <p>11.2. Records on public blockchains (address, amount) are public and irreversible; a wallet address may be regarded as pseudonymised personal data. We write nothing to the blockchain other than the address and amount.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>12. Other jurisdictions</h2>
+        <p><strong class="todo">[lawyer]</strong> Where Thailand's Personal Data Protection Act B.E. 2562 (PDPA) or Israel's Protection of Privacy Law 5741-1981 applies, you have the corresponding rights under those laws; contact us at the same address.</p>
+      </div>
+      <div class="card card-lg legal-card"><h2>13. Changes</h2>
+        <p>We publish a new version with a date and number; material changes are notified in the Service. Previous versions are available on request.</p>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+      <a href="../terms/" data-i18n="common.footer.terms">Условия</a>
+      <a href="../privacy/" data-i18n="common.footer.privacy">Конфиденциальность</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+  <div class="wrap"><p class="foot-disclaimer" data-i18n="common.footer.disclaimer">Это исследовательская платформа, не финансовый совет. 18+</p></div>
+</footer>
+
+</body>
+</html>
