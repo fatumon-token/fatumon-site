@@ -41,6 +41,8 @@
   "home.stats.signals.note": "live journal, S1",
   "home.stats.anomalies.label": "ANOMALIES",
   "home.stats.anomalies.note": "in registry",
+  "home.stats.anomalies24.label": "ANOMALIES 24H",
+  "home.stats.anomalies24.note": "found in last 24 hours",
   "home.who.tag": "// КТО ТЫ",
   "home.who.title": "Выбери, кто ты",
   "home.who.trader.title": "Трейдер",

@@ -10,6 +10,7 @@
   <img alt="data" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ffatumon-token.github.io%2Ffatumon-site%2Fstats.json&query=%24.data_gb&label=data&suffix=%20GB&color=4ADE80">
   <img alt="signals" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ffatumon-token.github.io%2Ffatumon-site%2Fstats.json&query=%24.signals&label=signals&color=F472B6">
   <img alt="anomalies" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ffatumon-token.github.io%2Ffatumon-site%2Fstats.json&query=%24.anomalies&label=anomalies&color=A78BFA">
+  <img alt="anomalies 24h" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ffatumon-token.github.io%2Ffatumon-site%2Fstats.json&query=%24.anomalies_24h&label=anomalies%2024h&color=ffb347">
 </p>
 
 <h1 align="center">Fatumon</h1>
@@ -95,12 +96,12 @@ Then open <http://localhost:8080/>. Add `?lang=en` to force English.
 
 ## Counters (`stats.json`)
 
-The pixel-display row on the home page (exchanges, trading pairs, GB of data, signals, anomalies in the registry) and the badges at the top of this README read `stats.json`:
+The pixel-display row on the home page (exchanges, trading pairs, GB of data, signals, anomalies in the registry, anomalies in the last 24 hours) and the badges at the top of this README read `stats.json`:
 
 ```json
 {
   "anomalies": 40,
-  "anomalies_24h": 92,
+  "anomalies_24h": 108,
   "coins": 476,
   "data_gb": 152,
   "exchanges": 8,
@@ -117,7 +118,7 @@ The pixel-display row on the home page (exchanges, trading pairs, GB of data, si
 | `data_gb` | size of the raw archive, GB |
 | `signals` | rows in the open signal journal |
 | `anomalies` | features in the anomaly registry (shown on the site) |
-| `anomalies_24h` | anomaly events detected in the last 24 hours (exported, not shown) |
+| `anomalies_24h` | anomaly events detected in the last 24 hours (rebuilt hourly) |
 | `uptime_days` | consecutive days with complete daily data on all exchanges (exported, not shown) |
 | `updated_at` | time of the export, UTC ISO |
 
