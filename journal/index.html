@@ -56,6 +56,7 @@
       <span class="tag" data-i18n="journal.tag">// S1 · ЖУРНАЛ</span>
       <h1 data-i18n="journal.h1">Журнал сигналов</h1>
       <p class="lead" data-i18n="journal.lead">Теневой прогон с 25.10.2026. Каждый сигнал записывается до исхода и не редактируется.</p>
+      <p class="jrule" data-i18n="journal.rule">S1 предупреждает о резком движении, не о направлении. Сигнал считается точным, если в течение 4 часов после него был всплеск: 8% и больше за 15 минут или 15% и больше за час — в любую сторону.</p>
     </div>
     <div class="mascot mascot-sm">
       <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
@@ -108,28 +109,27 @@
       </div>
       <div class="px-cell" role="listitem" style="--px:#4ADE80">
         <div class="px-screen">
-          <span class="px-label" data-i18n="journal.cell.real.label">REAL</span>
+          <span class="px-label" data-i18n="journal.cell.real.label">ТОЧНЫХ</span>
           <span class="px-num"><span data-jstat="real">—</span></span>
           <span class="px-note" data-i18n="journal.cell.real.note">4h burst</span>
         </div>
       </div>
       <div class="px-cell" role="listitem" style="--px:#e0bf88">
         <div class="px-screen">
-          <span class="px-label" data-i18n="journal.cell.fpr.label">FALSE / REAL</span>
+          <span class="px-label" data-i18n="journal.cell.fpr.label">ЛОЖНЫХ НА 1 ТОЧНЫЙ</span>
           <span class="px-num"><span data-jstat="false_per_real">—</span></span>
           <span class="px-note" data-i18n="journal.cell.fpr.note">known outcomes</span>
         </div>
       </div>
     </div>
-    <p class="jnote" data-i18n="journal.cells.note">Настоящий — всплеск в течение 4 часов после сигнала. Учитываются сигналы с известным исходом.</p>
   </section>
   <section class="wrap section" style="padding-top:0">
     <div class="card card-lg block journal-card">
       <div class="block-head"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM3 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="journal.table.title">Записи журнала</h2></div>
-      <p class="muted jcloses" data-i18n="journal.closes">Закрытие через 1, 4 и 24 часа после сигнала, % к моменту сигнала; «…» — ещё нет данных.</p>
+      <p class="muted jcloses" data-i18n="journal.closes">Ход к закрытию через 1, 4 и 24 часа после сигнала, по модулю, со стрелкой направления; ✓ — в этом окне был всплеск; «…» — ещё нет данных.</p>
       <div class="jtable-wrap">
         <table class="jtable">
-          <thead><tr><th scope="col" data-i18n="journal.th.time">Время (UTC)</th><th scope="col" data-i18n="journal.th.coin">Пара</th><th scope="col" data-i18n="journal.th.first">Первая свеча</th><th scope="col" data-i18n="journal.th.h1">1 ч</th><th scope="col" data-i18n="journal.th.h4">4 ч</th><th scope="col" data-i18n="journal.th.h24">24 ч</th><th scope="col" data-i18n="journal.th.status">Статус</th></tr></thead>
+          <thead><tr><th scope="col" data-i18n="journal.th.time">Время (UTC)</th><th scope="col" data-i18n="journal.th.coin">Пара</th><th scope="col" data-i18n="journal.th.first">Куда пошла</th><th scope="col" data-i18n="journal.th.h1">1 ч</th><th scope="col" data-i18n="journal.th.h4">4 ч</th><th scope="col" data-i18n="journal.th.h24">24 ч</th><th scope="col" data-i18n="journal.th.status">Статус</th></tr></thead>
           <tbody data-journal-rows>
             <tr class="jempty"><td colspan="7" data-i18n="journal.empty">Журнал обновляется</td></tr>
           </tbody>

@@ -442,7 +442,8 @@ a.card:hover { transform: translateY(-2px); border-color: var(--gold); color: in
 
 /* ---------- журнал ---------- */
 .stats.stats-3 { grid-template-columns: repeat(3, 1fr); max-width: 820px; }
-.jnote { font-size: 13px; color: var(--muted); margin-top: 14px; max-width: 820px; }
+.jrule { margin-top: 14px; max-width: 760px; font-size: 16px; color: var(--text); border-left: 2px solid var(--gold); padding-left: 14px; }
+.stats-3 .px-label { text-wrap: balance; }
 .journal-card { max-width: 100%; }
 .jcloses { font-size: 14px; margin-bottom: 14px; }
 .jtable-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -454,21 +455,24 @@ a.card:hover { transform: translateY(-2px); border-color: var(--gold); color: in
 }
 .jtable td { padding: 10px; border-bottom: 1px solid rgba(255, 255, 255, .08); font-size: 15px; white-space: nowrap; }
 .jtable td.num { font-family: var(--mono); }
-.jtable td.pos { color: var(--ok); }
-.jtable td.neg { color: #F87171; }
+.jtable td.calm { color: var(--muted); }
+.jtable td.burst { color: var(--ok); }
 .jtable td.na { color: var(--muted); }
+.jtable .dir { font-size: .9em; margin-right: 1px; }
+.jtable .tick { font-weight: 600; }
+.jtable .mv { white-space: nowrap; }
 .jtable .coin { font-family: var(--mono); font-weight: 600; color: var(--text); }
 .jtable .time { font-family: var(--mono); color: var(--muted); font-size: 14px; }
 .arrow { font-size: 13px; }
-.arrow.up { color: var(--ok); }
-.arrow.down { color: #F87171; }
+.arrow { color: var(--muted); }
 .jbadge {
   display: inline-block; padding: 3px 10px; border-radius: 999px;
   font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, .22); color: var(--muted); background: rgba(255, 255, 255, .04);
 }
 .jbadge.real { color: var(--ok); border-color: rgba(74, 222, 128, .45); background: rgba(74, 222, 128, .08); }
-.jbadge.false { color: #F87171; border-color: rgba(248, 113, 113, .45); background: rgba(248, 113, 113, .08); }
+.jbadge.pending { border-style: dashed; background: transparent; }
+.jbadge.false { color: rgba(214, 222, 244, .55); border-color: rgba(255, 255, 255, .16); background: rgba(255, 255, 255, .03); }
 .jtable td.jcell-head .jbadge { display: none; }
 .jempty td { text-align: center; color: var(--muted); padding: 22px 10px; white-space: normal; }
 

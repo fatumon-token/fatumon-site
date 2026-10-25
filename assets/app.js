@@ -313,13 +313,17 @@
     function esc(s) {
       return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
     }
-    function pct(v) {
-      if (typeof v !== 'number') return { txt: '…', cls: 'na' };
+    // ход за окно: модуль + стрелка направления; ✓ и зелёный — только если в окне был всплеск
+    function move(v, burst) {
+      if (typeof v !== 'number') return { html: '<span class="na">…</span>', cls: 'na' };
       var s;
       try {
-        s = new Intl.NumberFormat(LANG, { signDisplay: 'exceptZero', minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
-      } catch (e) { s = (v > 0 ? '+' : '') + v.toFixed(1); }
-      return { txt: s + '%', cls: v > 0 ? 'pos' : (v < 0 ? 'neg' : '') };
+        s = new Intl.NumberFormat(LANG, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(Math.abs(v));
+      } catch (e) { s = Math.abs(v).toFixed(1); }
+      var arrow = v > 0 ? '↑' : (v < 0 ? '↓' : '');
+      var mark = burst === true
+        ? '<span class="tick" title="' + esc(label('journal.burst', 'всплеск в этом окне')) + '">✓</span> ' : '';
+      return { html: '<span class="mv">' + mark + '<span class="dir">' + arrow + '</span>' + s + '%</span>', cls: burst === true ? 'burst' : 'calm' };
     }
     function label(key, fb) { return t(key) || fb; }
 
@@ -347,26 +351,26 @@
       }
       var L = {
         time: label('journal.th.time', 'Время (UTC)'), coin: label('journal.th.coin', 'Пара'),
-        first: label('journal.th.first', 'Первая свеча'), h1: label('journal.th.h1', '1 ч'),
+        first: label('journal.th.first', 'Куда пошла'), h1: label('journal.th.h1', '1 ч'),
         h4: label('journal.th.h4', '4 ч'), h24: label('journal.th.h24', '24 ч'), status: label('journal.th.status', 'Статус')
       };
       var html = '';
       data.signals.forEach(function (s) {
         var fc = s.first_candle === 'up'
-          ? '<span class="arrow up" aria-label="' + esc(label('journal.first.up', 'вверх')) + '">▲</span>'
+          ? '<span class="arrow" aria-label="' + esc(label('journal.first.up', 'вверх')) + '">▲</span>'
           : s.first_candle === 'down'
-            ? '<span class="arrow down" aria-label="' + esc(label('journal.first.down', 'вниз')) + '">▼</span>'
+            ? '<span class="arrow" aria-label="' + esc(label('journal.first.down', 'вниз')) + '">▼</span>'
             : '<span class="na">…</span>';
         var st = s.status === 'real' || s.status === 'false' ? s.status : 'pending';
         var badge = '<span class="jbadge ' + st + '">' + esc(label('journal.status.' + st, st)) + '</span>';
-        var p1 = pct(s.h1), p4 = pct(s.h4), p24 = pct(s.h24);
+        var p1 = move(s.h1, s.burst_1h), p4 = move(s.h4, s.burst_4h), p24 = move(s.h24, s.burst_24h);
         html += '<tr>' +
           '<td class="time jcell-head" data-label="' + esc(L.time) + '"><span>' + esc(s.time_utc || '') + '</span>' + badge + '</td>' +
           '<td class="coin" data-label="' + esc(L.coin) + '">' + esc(s.coin || '') + '</td>' +
           '<td data-label="' + esc(L.first) + '">' + fc + '</td>' +
-          '<td class="num ' + p1.cls + '" data-label="' + esc(L.h1) + '">' + p1.txt + '</td>' +
-          '<td class="num ' + p4.cls + '" data-label="' + esc(L.h4) + '">' + p4.txt + '</td>' +
-          '<td class="num ' + p24.cls + '" data-label="' + esc(L.h24) + '">' + p24.txt + '</td>' +
+          '<td class="num ' + p1.cls + '" data-label="' + esc(L.h1) + '">' + p1.html + '</td>' +
+          '<td class="num ' + p4.cls + '" data-label="' + esc(L.h4) + '">' + p4.html + '</td>' +
+          '<td class="num ' + p24.cls + '" data-label="' + esc(L.h24) + '">' + p24.html + '</td>' +
           '<td class="jstatus" data-label="' + esc(L.status) + '">' + badge + '</td>' +
           '</tr>';
       });

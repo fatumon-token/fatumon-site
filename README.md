@@ -126,7 +126,7 @@ The file is produced by an export script that runs on a schedule against the res
 
 ## Signal journal (`journal.json`)
 
-`journal/` renders the open journal of strategy S1 from `journal.json`: time (UTC), pair, direction of the first 15-minute candle, close after 1 / 4 / 24 hours (%), and status — `pending` until the 4-hour outcome is known, then `real` (a burst within 4 hours) or `false`. The summary shows all signals, real ones, and false signals per real one over signals with a known outcome. Strategy conditions are not published. The page re-reads the file every hour and when the tab becomes visible; if the file is missing it shows "The journal is updating".
+`journal/` renders the open journal of strategy S1 from `journal.json`: time (UTC), pair, direction of the first 15-minute candle, move to the close after 1 / 4 / 24 hours (absolute, with a direction arrow) with per-window burst flags `burst_1h` / `burst_4h` / `burst_24h`, and status — `pending` until the 4-hour outcome is known, then `real` (accurate: a burst of 8% in 15 minutes or 15% in an hour within 4 hours, either way) or `false` (missed). S1 warns of a sharp move, not of its direction, so colours mark bursts, not the sign of the move. The summary shows all signals, real ones, and false signals per real one over signals with a known outcome. Strategy conditions are not published. The page re-reads the file every hour and when the tab becomes visible; if the file is missing it shows "The journal is updating".
 
 ## Adding or editing texts
 
