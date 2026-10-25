@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="ecosystem.title">Экосистема — Fatumon</title>
+<meta name="description" content="Журнал и сигналы, разбор токена, игра на прогнозах, данные для машин." data-i18n-attr="content:ecosystem.meta">
+<meta property="og:title" content="Экосистема — Fatumon" data-i18n-attr="content:ecosystem.title">
+<meta property="og:description" content="Журнал и сигналы, разбор токена, игра на прогнозах, данные для машин." data-i18n-attr="content:ecosystem.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="ecosystem">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-head page-head-mascot">
+    <div>
+      <span class="tag" data-i18n="ecosystem.tag">// 03 · ЭКОСИСТЕМА</span>
+      <h1 data-i18n="ecosystem.h1">Экосистема</h1>
+    <p class="lead" data-i18n="ecosystem.lead">Приложения для трейдера, игрока и машины — на одних и тех же данных и одном журнале.</p>
+    </div>
+    <div class="mascot mascot-sm">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+  <section class="wrap section" style="padding-top:8px">
+    <div class="grid-2">
+      <div class="card card-lg eco" id="trader">
+        <div class="eco-head"><svg class="px-icon" style="--px:#4ADE80" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M6 0h1v1h-1zM7 0h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg><span class="status ok" data-i18n="common.status.live">работает</span></div>
+        <h3 data-i18n="ecosystem.journal.title">Журнал и сигналы</h3>
+        <p data-i18n="ecosystem.journal.text">Открытый журнал: каждый сигнал и его итог видны каждому.</p>
+      </div>
+      <div class="card card-lg eco" id="coin">
+        <div class="eco-head"><svg class="px-icon" style="--px:#9BE8FF" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM1 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM6 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1z" fill="currentColor"/></svg><span class="status" data-i18n="common.status.wip">в разработке</span></div>
+        <h3 data-i18n="ecosystem.coin.title">Разбор токена</h3>
+        <p data-i18n="ecosystem.coin.text">Полная картина по любому токену в моменте — и объяснение, откуда она взялась.</p>
+      </div>
+      <div class="card card-lg eco" id="player">
+        <div class="eco-head"><svg class="px-icon" style="--px:#F472B6" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M3 0h1v1h-1zM4 0h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM0 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg><span class="status" data-i18n="common.status.wip">в разработке</span></div>
+        <h3 data-i18n="ecosystem.game.title">Игра</h3>
+        <p data-i18n="ecosystem.game.text">Мини-приложение в Telegram: прогнозы на наших данных, очки за верные прогнозы, рейтинг.</p>
+      </div>
+      <div class="card card-lg eco" id="machine">
+        <div class="eco-head"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM2 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM5 7h1v1h-1zM7 7h1v1h-1z" fill="currentColor"/></svg><span class="status" data-i18n="common.status.wip">в разработке</span></div>
+        <h3 data-i18n="ecosystem.machine.title">Данные для машин</h3>
+        <p data-i18n="ecosystem.machine.text">Сигналы, аномалии и датасеты для ИИ-агентов.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+</footer>
+
+</body>
+</html>

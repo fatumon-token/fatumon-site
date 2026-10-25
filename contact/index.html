@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="contact.title">Контакты — Fatumon</title>
+<meta name="description" content="Почта, Telegram, X и GitHub проекта Fatumon." data-i18n-attr="content:contact.meta">
+<meta property="og:title" content="Контакты — Fatumon" data-i18n-attr="content:contact.title">
+<meta property="og:description" content="Почта, Telegram, X и GitHub проекта Fatumon." data-i18n-attr="content:contact.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="contact">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-head page-head-mascot">
+    <div>
+      <span class="tag" data-i18n="contact.tag">// 06 · КОНТАКТЫ</span>
+      <h1 data-i18n="contact.h1">Контакты</h1>
+    </div>
+    <div class="mascot mascot-sm">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+  <section class="wrap section" style="padding-top:8px">
+    <div class="grid-2">
+      <a class="card contact-card" href="mailto:fatumon.token@gmail.com">
+        <span class="label" data-i18n="contact.mail">Почта</span>
+        <span class="value">fatumon.token@gmail.com</span>
+      </a>
+      <a class="card contact-card" href="https://t.me/fatumon" target="_blank" rel="noopener">
+        <span class="label" data-i18n="contact.telegram">Telegram</span>
+        <span class="value">t.me/fatumon</span>
+      </a>
+      <a class="card contact-card" href="https://x.com/fatumon_token" target="_blank" rel="noopener">
+        <span class="label" data-i18n="contact.x">X</span>
+        <span class="value">x.com/fatumon_token</span>
+      </a>
+      <a class="card contact-card" href="https://github.com/fatumon-token" target="_blank" rel="noopener">
+        <span class="label" data-i18n="contact.github">GitHub</span>
+        <span class="value">github.com/fatumon-token</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+</footer>
+
+</body>
+</html>

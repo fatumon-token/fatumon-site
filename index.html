@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="home.title">Fatumon — собственный ИИ для торговых стратегий</title>
+<meta name="description" content="Fatumon — исследовательская платформа: рыночные данные с 8 бирж, проверяемые прогнозы, игра на прогнозах, токен доступа." data-i18n-attr="content:home.meta">
+<meta property="og:title" content="Fatumon — собственный ИИ для торговых стратегий" data-i18n-attr="content:home.title">
+<meta property="og:description" content="Fatumon — исследовательская платформа: рыночные данные с 8 бирж, проверяемые прогнозы, игра на прогнозах, токен доступа." data-i18n-attr="content:home.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="home">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="./">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="./" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Герой -->
+  <section class="wrap hero">
+    <div>
+      <span class="tag" data-i18n="home.hero.tag">// FATUMON</span>
+      <h1 data-i18n="home.hero.title">Собственный ИИ, который находит рабочие торговые стратегии.</h1>
+      <ul class="hero-lines">
+        <li data-i18n="home.hero.line1">Десятки проверенных стратегий.</li>
+        <li data-i18n="home.hero.line2">Полный анализ рынка и любого токена в моменте.</li>
+        <li data-i18n="home.hero.line3">Сигналы с результатом.</li>
+        <li data-i18n="home.hero.line4">Экосистема приложений для трейдера.</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="home.hero.telegram">Telegram</a>
+        <a class="btn btn-ghost" href="how/" data-i18n="home.hero.how">Как это работает</a>
+      </div>
+      <p class="hero-note">
+        <span data-i18n="home.hero.note">Fatumon — исследовательская платформа: рыночные данные с 8 бирж, проверяемые прогнозы, игра на прогнозах, токен доступа.</span>
+        <a href="roadmap/" data-i18n="home.hero.roadmap">дорожная карта</a>
+      </p>
+    </div>
+    <div class="mascot">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 2. Счётчики -->
+  <section class="wrap section" id="stats">
+    <div class="stats" role="list">
+      <div class="px-cell" role="listitem" style="--px:#9BE8FF">
+        <div class="px-screen">
+          <span class="px-label" data-i18n="home.stats.exchanges.label">EXCHANGES</span>
+          <span class="px-num"><span data-stat="exchanges" data-fallback="8">8</span></span>
+          <span class="px-note" data-i18n="home.stats.exchanges.note">order book · trades · funding</span>
+        </div>
+      </div>
+      <div class="px-cell" role="listitem" style="--px:#e0bf88">
+        <div class="px-screen">
+          <span class="px-label" data-i18n="home.stats.coins.label">COINS</span>
+          <span class="px-num"><span data-stat="coins" data-fallback="476">476</span></span>
+          <span class="px-note" data-i18n="home.stats.coins.note">Binance perp + spot</span>
+        </div>
+      </div>
+      <div class="px-cell" role="listitem" style="--px:#4ADE80">
+        <div class="px-screen">
+          <span class="px-label" data-i18n="home.stats.data.label">DATA</span>
+          <span class="px-num"><span data-stat="data_gb" data-fallback="150">150</span><span class="px-unit">GB</span></span>
+          <span class="px-note" data-i18n="home.stats.data.note">order book · futures · funding</span>
+        </div>
+      </div>
+      <div class="px-cell" role="listitem" style="--px:#F472B6">
+        <div class="px-screen">
+          <span class="px-label" data-i18n="home.stats.signals.label">SIGNALS</span>
+          <span class="px-num"><span data-stat="signals" data-fallback="523">523</span></span>
+          <span class="px-note" data-i18n="home.stats.signals.note">live journal, S1</span>
+        </div>
+      </div>
+      <div class="px-cell" role="listitem" style="--px:#A78BFA">
+        <div class="px-screen">
+          <span class="px-label" data-i18n="home.stats.anomalies.label">ANOMALIES</span>
+          <span class="px-num"><span data-stat="anomalies" data-fallback="40">40</span></span>
+          <span class="px-note" data-i18n="home.stats.anomalies.note">in registry</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Кто ты -->
+  <section class="wrap section">
+    <div class="section-head">
+      <span class="tag" data-i18n="home.who.tag">// КТО ТЫ</span>
+      <h2 data-i18n="home.who.title">Выбери, кто ты</h2>
+    </div>
+    <div class="grid-3">
+      <a class="card" href="ecosystem/#trader">
+        <h3 data-i18n="home.who.trader.title">Трейдер</h3>
+        <p data-i18n="home.who.trader.text">Журнал сигналов и разборы.</p>
+        <span class="card-more" data-i18n="home.who.more">Подробнее →</span>
+      </a>
+      <a class="card" href="ecosystem/#player">
+        <h3 data-i18n="home.who.player.title">Игрок</h3>
+        <p data-i18n="home.who.player.text">Прогнозы на наших данных.</p>
+        <span class="card-more" data-i18n="home.who.more">Подробнее →</span>
+      </a>
+      <a class="card" href="ecosystem/#machine">
+        <h3 data-i18n="home.who.machine.title">Машина</h3>
+        <p data-i18n="home.who.machine.text">Данные и сигналы для ИИ-агентов.</p>
+        <span class="card-more" data-i18n="home.who.more">Подробнее →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. Как мы работаем -->
+  <section class="wrap section">
+    <div class="section-head">
+      <span class="tag" data-i18n="home.how.tag">// КАК МЫ РАБОТАЕМ</span>
+      <h2 data-i18n="home.how.title">Как мы работаем</h2>
+    </div>
+    <div class="steps">
+      <div class="card step">
+        <span class="num">01</span>
+        <h3 data-i18n="home.how.s1.title">Собираем</h3>
+        <p data-i18n="home.how.s1.text">Рыночные данные с бирж, круглосуточно.</p>
+      </div>
+      <div class="card step">
+        <span class="num">02</span>
+        <h3 data-i18n="home.how.s2.title">Проверяем</h3>
+        <p data-i18n="home.how.s2.text">На истории и в живом прогоне. Всё записывается.</p>
+      </div>
+      <div class="card step">
+        <span class="num">03</span>
+        <h3 data-i18n="home.how.s3.title">Публикуем</h3>
+        <p data-i18n="home.how.s3.text">Открытый журнал — результат виден каждому.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Powered by -->
+  <section class="wrap section">
+    <div class="section-head" style="text-align:center">
+      <span class="tag" data-i18n="home.powered.tag">// POWERED BY</span>
+    </div>
+    <div class="pills">
+      <span class="pill">Telegram</span>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+</footer>
+
+</body>
+</html>

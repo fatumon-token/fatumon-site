@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="about.title">О нас — Fatumon</title>
+<meta name="description" content="Кто мы, на чём построена платформа, что мы предлагаем и куда идём." data-i18n-attr="content:about.meta">
+<meta property="og:title" content="О нас — Fatumon" data-i18n-attr="content:about.title">
+<meta property="og:description" content="Кто мы, на чём построена платформа, что мы предлагаем и куда идём." data-i18n-attr="content:about.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="about">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-head page-head-mascot">
+    <div>
+      <span class="tag" data-i18n="about.tag">// 01 · КТО МЫ</span>
+      <h1 data-i18n="about.h1">О нас</h1>
+    <p class="lead" data-i18n="about.lead">Исследовательская команда, которая строит собственный ИИ для рынка криптовалют — и проверяет каждое утверждение.</p>
+    </div>
+    <div class="mascot mascot-sm">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+  <section class="wrap section" style="padding-top:8px">
+    <div class="stack narrow">
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#9BE8FF" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM3 0h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="about.who.title">Кто мы</h2></div>
+        <p data-i18n="about.who.p1">Мы исследовательская команда. Платформа построена на трёх вещах: собственный сборщик данных, несколько ИИ-моделей, которые рассуждают и считают, и собственная база истории рынка, которой нет в открытом доступе.</p>
+        <p class="facts">
+          <span data-i18n="about.who.p2.a">Сейчас это</span>
+          <strong class="fact"><span data-stat="exchanges" data-fallback="8">8</span> <span data-i18n="about.who.p2.ex">бирж</span></strong>,
+          <strong class="fact"><span data-stat="coins" data-fallback="476">476</span> <span data-i18n="about.who.p2.pairs">торговых пар и</span></strong>
+          <strong class="fact"><span data-stat="data_gb" data-fallback="152">152</span> <span data-i18n="about.who.p2.gb">GB стакана, фьючерсов и фандинга, собранных непрерывно.</span></strong>
+        </p>
+        <p data-i18n="about.who.p3">Каждое утверждение проверяется дважды — на истории и в живом прогоне без денег, — а итог каждого сигнала записывается в открытый журнал. В анализ входят не только цифры: новости и события, которые двигают рынок, тоже учитываются.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#e0bf88" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM1 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="about.offer.title">Что мы предлагаем</h2></div>
+        <p data-i18n="about.offer.p1">Экосистему приложений для трейдера: сигналы, полный разбор рынка и конкретного токена — и объяснение, как система пришла к этому выводу.</p>
+        <p data-i18n="about.offer.p2">Не готовый ответ, а понимание рынка: каждый вывод можно проследить до данных и правила, по которому он сделан.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#F472B6" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM6 2h1v1h-1zM5 3h1v1h-1zM4 4h1v1h-1zM4 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="about.why.title">Зачем</h2></div>
+        <p data-i18n="about.why.p1">На рынке много обещаний и мало проверяемых результатов. Сигналы раздают без истории, стратегии показывают только на удачных отрезках, а итог никто не публикует.</p>
+        <p data-i18n="about.why.p2">Мы делаем наоборот: открытый журнал, где виден каждый сигнал и его итог — удачный и нет. Доверие строится на фактах, которые можно проверить, а не на словах.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM0 4h1v1h-1zM0 5h1v1h-1zM0 6h1v1h-1zM0 7h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="about.where.title">Куда идём</h2></div>
+        <p data-i18n="about.where.text">Платформа для трейдеров, игроков и ИИ-агентов: журнал и сигналы, разбор токена, игра на прогнозах, данные для машин — и собственная модель рынка.</p>
+        <a class="card-more" href="../roadmap/" data-i18n="about.where.link">Дорожная карта →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+</footer>
+
+</body>
+</html>

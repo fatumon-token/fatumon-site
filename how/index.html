@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="how.title">Как это работает — Fatumon</title>
+<meta name="description" content="Данные с 8 бирж, исследователь стратегий, модели и многоступенчатая проверка: история, живой прогон, журнал." data-i18n-attr="content:how.meta">
+<meta property="og:title" content="Как это работает — Fatumon" data-i18n-attr="content:how.title">
+<meta property="og:description" content="Данные с 8 бирж, исследователь стратегий, модели и многоступенчатая проверка: история, живой прогон, журнал." data-i18n-attr="content:how.meta">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="how">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../">Fatumon</a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-head page-head-mascot">
+    <div>
+      <span class="tag" data-i18n="how.tag">// 02 · КАК ЭТО РАБОТАЕТ</span>
+      <h1 data-i18n="how.h1">Как это работает</h1>
+    <p class="lead" data-i18n="how.lead">Данные, исследователь стратегий, модели и проверка — всё, из чего складывается каждый сигнал.</p>
+    </div>
+    <div class="mascot mascot-sm">
+      <svg id="mascot" viewBox="0 0 200 240" role="img" aria-label="Маскот Fatumon — зелёная свеча с глазами" data-i18n-attr="aria-label:home.mascot.alt">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+    </div>
+  </section>
+  <section class="wrap section" style="padding-top:8px">
+    <div class="stack narrow">
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#9BE8FF" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM7 3h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM0 5h1v1h-1zM7 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="how.data.title">Данные</h2></div>
+        <p data-i18n="how.data.p1">Стакан и сделки в реальном времени, фьючерсы, открытый интерес, фандинг, расхождение спота и фьючерса, аномалии — с 8 бирж, непрерывно, в собственное хранилище. К цифрам добавляется фундаментальное: новости и события, которые двигают рынок.</p>
+        <p class="why" data-i18n="how.data.why">В открытой истории этих данных нет. У нас они есть.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#4ADE80" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM2 3h1v1h-1zM5 3h1v1h-1zM1 4h1v1h-1zM6 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="how.research.title">Исследователь стратегий</h2></div>
+        <p data-i18n="how.research.p1">Агент берёт все доступные торговые стратегии за историю рынка, формализует их в проверяемые правила и прогоняет через единый бэктест.</p>
+        <p data-i18n="how.research.p2">Затем разбирает их на строительные блоки и собирает из них собственные стратегии. Стратегия, прошедшая все этапы проверки, выходит в живой прогон и в журнал.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM2 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM5 7h1v1h-1zM7 7h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="how.models.title">Модели</h2></div>
+        <ul class="list">
+          <li data-i18n-html="how.models.claude"><strong>Claude</strong> — рассуждения и разбор.</li>
+          <li data-i18n-html="how.models.kronos"><strong>Kronos</strong> — модель временных рядов для рынка.</li>
+          <li data-i18n-html="how.models.qwen"><strong>Qwen</strong> — открытая языковая модель для обработки данных.</li>
+          <li data-i18n-html="how.models.own"><strong>Собственная модель рынка</strong> — в разработке.</li>
+        </ul>
+        <p class="note" data-i18n="how.models.rule">Решение принимает правило, модель объясняет.</p>
+      </div>
+      <div class="card card-lg block">
+        <div class="block-head"><svg class="px-icon" style="--px:#e0bf88" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M6 0h1v1h-1zM7 0h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM2 6h1v1h-1z" fill="currentColor"/></svg><h2 data-i18n="how.check.title">Проверка</h2></div>
+        <p class="muted" data-i18n="how.check.lead">Ни одна стратегия не получает статус «рабочая», пока не пройдёт всю цепочку.</p>
+        <ol class="chain">
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#9BE8FF" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM0 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM3 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM7 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s1.title">История</h3>
+            <p data-i18n="how.check.s1.text">История делится на три части: обучение, проверка, карантин. Карантин стратегия видит один раз — в самом конце.</p>
+          </li>
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#e0bf88" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s2.title">Издержки</h3>
+            <p data-i18n="how.check.s2.text">Комиссии и проскальзывание считаются по реальному стакану, а не по средней цифре.</p>
+          </li>
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#F472B6" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM6 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s3.title">Защита от подгонки</h3>
+            <p data-i18n="how.check.s3.text">Стратегия должна работать на данных, которых не видела. Что держится только на удачном отрезке — отсеивается.</p>
+          </li>
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#4ADE80" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s4.title">Живой прогон</h3>
+            <p data-i18n="how.check.s4.text">Без денег, на живом рынке. Каждый сигнал фиксируется в момент появления.</p>
+          </li>
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM3 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM3 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM3 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s5.title">Журнал</h3>
+            <p data-i18n="how.check.s5.text">Открытый журнал с итогом каждого сигнала. Что не прошло — остаётся в нём тоже.</p>
+          </li>
+          <li class="chain-step">
+            <div class="chain-icon"><svg class="px-icon" style="--px:#ffb347" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M3 0h1v1h-1zM4 0h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM0 6h1v1h-1zM7 6h1v1h-1z" fill="currentColor"/></svg></div>
+            <h3 data-i18n="how.check.s6.title">Статус «рабочая»</h3>
+            <p data-i18n="how.check.s6.text">Только после обоих слоёв — истории и живого прогона. Один из них не считается.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="note" data-i18n="how.disclaimer">Это исследовательская платформа, не финансовый совет.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+</footer>
+
+</body>
+</html>

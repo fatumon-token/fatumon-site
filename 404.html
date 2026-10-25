@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Страница не найдена — Fatumon</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  html,body{margin:0;min-height:100vh;background:#060912;color:#F4F6FF;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+  body{display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+  .tag{font-family:ui-monospace,Consolas,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#e0bf88}
+  h1{font-size:28px;margin:12px 0 8px}
+  p{color:rgba(214,222,244,.72);margin:0 0 18px}
+  a{color:#e0bf88}
+</style>
+<script>
+  (function () {
+    var root = /github\.io$/i.test(location.hostname) ? '/fatumon-site/' : '/';
+    var lang = new URLSearchParams(location.search).get('lang');
+    var to = root + (lang ? '?lang=' + encodeURIComponent(lang) : '');
+    document.addEventListener('DOMContentLoaded', function () {
+      var a = document.getElementById('home');
+      if (a) a.setAttribute('href', to);
+    });
+    setTimeout(function () { location.replace(to); }, 400);
+  })();
+</script>
+</head>
+<body>
+  <div>
+    <div class="tag">// 404</div>
+    <h1>Такой страницы нет</h1>
+    <p>Переходим на главную…</p>
+    <a id="home" href="/">На главную</a>
+  </div>
+</body>
+</html>
