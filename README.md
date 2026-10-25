@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://fatumon.com">
-    <img src="assets/logo.svg" alt="Fatumon" width="420">
+    <img src="assets/brand/logo.svg" alt="Fatumon" width="160">
   </a>
 </p>
 
@@ -69,8 +69,7 @@ The site is a plain static website: no framework, no build step, no server. It i
 │   ├── fonts/            Self-hosted woff2 fonts + LICENSES.md
 │   ├── style.css         Design tokens, @font-face, layout, responsive rules
 │   ├── app.js            i18n, navigation, stars, counters, mascot
-│   ├── logo.svg          Logo
-│   └── favicon.svg       Favicon
+│   └── brand/            Logo, favicon, avatars, OG image (see Brand)
 ├── i18n/
 │   ├── ru.json           Russian strings (flat keys)
 │   └── en.json           English strings
@@ -139,6 +138,24 @@ python -I tools/check_texts.py
 ```
 
 It scans both dictionaries, this README and all HTML pages and exits with a non-zero code if any public text contains a forbidden word or pattern (promotional claims, dates, personal names and so on).
+
+## Brand
+
+Final logo kit in `assets/brand/` (the editable source file is kept outside the repository):
+
+| File | Use |
+|---|---|
+| `logo.svg` | main logo: the mark inside a gold ring, transparent background — site header, `/token`, README |
+| `logo-512.png` … `logo-32.png` | raster logo in 512 / 256 / 128 / 64 / 32 px |
+| `mark.svg`, `mark-1024.png` | the mark alone, without the ring |
+| `mark-on-dark.svg` | mark for dark backgrounds |
+| `mark-on-light.svg`, `mark-on-light-1024.png` | mark for light backgrounds |
+| `favicon.ico`, `apple-touch-icon.png` | browser tab and iOS home-screen icons |
+| `avatar-1024.png` | avatar for Telegram, X and GitHub |
+| `fatumon-square-1200.png` | square card for posts |
+| `og-image.png` | 1200×630 social preview (`og:image`, `twitter:image`) |
+
+The animated green candle on the pages is a separate mascot, not the logo.
 
 ## Fonts
 

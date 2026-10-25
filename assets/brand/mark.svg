@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="291.25 238.0 500 500" role="img" aria-label="Fatumon mark">
+<title>Fatumon mark</title>
+<g fill="#F5EEFE">
+  <rect x="418" y="274" width="12" height="428" rx="6"/>
+  <rect x="392" y="361" width="65" height="261" rx="7"/>
+  <path d="M476 361H624L593.3 413.8Q590.9 418 586.5 418H476Q474 418 474 416V363Q474 361 476 361Z"/>
+  <path d="M476 473H608L577.3 525.8Q574.9 530 570.5 530H476Q474 530 474 528V475Q474 473 476 473Z"/>
+</g>
+<path fill="#FBC43A" d="M649.5 279Q658.5 314 690.5 323Q660 333.5 649.5 364Q639 333.5 608.5 323Q640.5 314 649.5 279Z"/>
+</svg>

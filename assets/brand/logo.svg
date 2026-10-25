@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="184.5 157.0 654.0 654.0" role="img" aria-label="Fatumon">
+<title>Fatumon</title>
+<defs><radialGradient id="fg" cx="511.5" cy="484.0" r="321.5" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#5C13DC"/><stop offset="0.4" stop-color="#5A12D8"/>
+  <stop offset="0.6" stop-color="#420EA1"/><stop offset="0.75" stop-color="#300C76"/>
+  <stop offset="0.9" stop-color="#220B5B"/><stop offset="1" stop-color="#1A083C"/>
+</radialGradient></defs>
+<circle cx="511.5" cy="484.0" r="321.5" fill="url(#fg)"/>
+<circle cx="511.5" cy="484.0" r="321.5" fill="none" stroke="#FBC43A" stroke-width="11.0"/>
+<g fill="#F5EEFE">
+  <rect x="418" y="274" width="12" height="428" rx="6"/>
+  <rect x="392" y="361" width="65" height="261" rx="7"/>
+  <path d="M476 361H624L593.3 413.8Q590.9 418 586.5 418H476Q474 418 474 416V363Q474 361 476 361Z"/>
+  <path d="M476 473H608L577.3 525.8Q574.9 530 570.5 530H476Q474 530 474 528V475Q474 473 476 473Z"/>
+</g>
+<path fill="#FBC43A" d="M649.5 279Q658.5 314 690.5 323Q660 333.5 649.5 364Q639 333.5 608.5 323Q640.5 314 649.5 279Z"/>
+</svg>

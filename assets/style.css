@@ -150,9 +150,11 @@ p + p { margin-top: 12px; }
 }
 .head-inner { display: flex; align-items: center; gap: 20px; height: var(--head-h); }
 .logo {
+  display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--mono); font-weight: 600; font-size: 18px; letter-spacing: .04em;
   color: var(--text); text-decoration: none; white-space: nowrap;
 }
+.logo img { width: 28px; height: 28px; flex: 0 0 auto; display: block; }
 .logo:hover { color: var(--gold); }
 .nav { display: flex; gap: 2px; margin-left: auto; }
 .nav a {
@@ -479,6 +481,10 @@ a.card:hover { transform: translateY(-2px); border-color: var(--gold); color: in
 /* ---------- токен ---------- */
 .token-hero { min-height: 50vh; display: flex; align-items: center; }
 .token-line { font-size: clamp(22px, 3vw, 32px); font-weight: 600; max-width: 720px; line-height: 1.35; }
+.token-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; padding-top: 40px; padding-bottom: 36px; }
+.token-card .token-line { margin: 0 auto; color: var(--text); }
+.token-card .pill-networks { margin-top: 0; }
+.token-coin { width: 160px; height: 160px; filter: drop-shadow(0 0 28px rgba(251, 196, 58, .28)) drop-shadow(0 0 8px rgba(251, 196, 58, .18)); }
 
 /* ---------- контакты ---------- */
 .contact-card .label { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block; }
@@ -557,6 +563,8 @@ a.card:hover { transform: translateY(-2px); border-color: var(--gold); color: in
   .px-label { font-size: 8px; }
   .px-num { font-size: 42px; }
   .px-note { font-size: 14px; }
+  .logo img { width: 26px; height: 26px; }
+  .token-coin { width: 132px; height: 132px; }
   .step::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -16px; transform: translate(-50%, 50%); }
   .card-lg { padding: 24px; }
   .btn { width: 100%; }

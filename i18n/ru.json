@@ -14,6 +14,7 @@
   "common.footer.github": "GitHub",
   "common.footer.mail": "Почта",
   "common.footer.copy": "© Fatumon",
+  "common.og.alt": "Fatumon — знак проекта",
   "common.status.live": "работает",
   "common.status.wip": "в разработке",
 
@@ -170,6 +171,7 @@
   "token.tag": "// 05 · ТОКЕН",
   "token.h1": "Токен",
   "token.text": "Токен доступа к экосистеме. Подробности — после аудита контракта.",
+  "token.coin.alt": "Знак Fatumon",
   "token.networks": "Сети: BNB Chain · TON",
 
   "contact.title": "Контакты — Fatumon",
