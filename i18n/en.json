@@ -197,5 +197,37 @@
   "privacy.meta": "What data Fatumon processes, why, who receives it and what your rights are.",
   "privacy.tag": "// 08 · PRIVACY",
   "privacy.h1": "Privacy Policy",
-  "privacy.site.note": "The website fatumon.com stores only your language choice in localStorage (strictly necessary); there is no analytics and no cookie banner. Recipients of website data: GitHub Pages (hosting) and, when you contact us, Telegram and e-mail."
+  "privacy.site.note": "The website fatumon.com stores only your language choice in localStorage (strictly necessary); there is no analytics and no cookie banner. Recipients of website data: GitHub Pages (hosting) and, when you contact us, Telegram and e-mail.",
+
+  "common.nav.journal": "Journal",
+
+  "ecosystem.journal.open": "Open journal →",
+
+  "journal.title": "Signal journal — Fatumon",
+  "journal.meta": "Open signal journal of strategy S1: every signal is recorded before its outcome and never edited.",
+  "journal.tag": "// S1 · JOURNAL",
+  "journal.h1": "Signal journal",
+  "journal.lead": "Shadow run since 25.10.2026. Every signal is recorded before its outcome and never edited.",
+  "journal.cell.total.label": "SIGNALS",
+  "journal.cell.total.note": "all recorded",
+  "journal.cell.real.label": "REAL",
+  "journal.cell.real.note": "4h burst",
+  "journal.cell.fpr.label": "FALSE / REAL",
+  "journal.cell.fpr.note": "known outcomes",
+  "journal.cells.note": "Real — a burst within 4 hours after the signal. Only signals with a known outcome are counted.",
+  "journal.table.title": "Journal entries",
+  "journal.th.time": "Time (UTC)",
+  "journal.th.coin": "Pair",
+  "journal.th.first": "First candle",
+  "journal.th.h1": "1 h",
+  "journal.th.h4": "4 h",
+  "journal.th.h24": "24 h",
+  "journal.th.status": "Status",
+  "journal.status.pending": "pending",
+  "journal.status.real": "real",
+  "journal.status.false": "false",
+  "journal.first.up": "up",
+  "journal.first.down": "down",
+  "journal.empty": "The journal is updating",
+  "journal.closes": "Close 1, 4 and 24 hours after the signal, % from the moment of the signal; “…” — not yet available."
 }

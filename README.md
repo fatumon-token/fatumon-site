@@ -44,7 +44,7 @@
 
 The site is a plain static website: no framework, no build step, no server. It is served by GitHub Pages and works both at the repository path (`/fatumon-site/`) and at the root of a custom domain, because every path is relative.
 
-- **Pages:** Home · About · How it works · Ecosystem · Roadmap · Token · Contact · Terms · Privacy
+- **Pages:** Home · About · How it works · Ecosystem · Journal · Roadmap · Token · Contact · Terms · Privacy
 - **Languages:** Russian and English, switched on the client (`?lang=ru|en`, remembered in `localStorage`)
 - **Live counters:** read from [`stats.json`](stats.json), refreshed by a scheduled export (see below)
 - **Design:** dark space background with drifting glass panels and gold accents
@@ -57,6 +57,7 @@ The site is a plain static website: no framework, no build step, no server. It i
 ├── about/                About
 ├── how/                  How it works
 ├── ecosystem/            Ecosystem (products and their status)
+├── journal/              Signal journal of strategy S1 (reads journal.json)
 ├── roadmap/              Roadmap (phases, no dates)
 ├── token/                Token
 ├── contact/              Contact
@@ -121,6 +122,10 @@ The pixel-display row on the home page (exchanges, trading pairs, GB of data, si
 | `updated_at` | time of the export, UTC ISO |
 
 The file is produced by an export script that runs on a schedule against the research database, commits the new `stats.json` to this repository and pushes it (`stats: <timestamp>` commits). The page fetches the file with an hourly cache-busting parameter, and re-reads it every hour and whenever the tab becomes visible again. If the file is unavailable the page falls back to the numbers embedded in the HTML. The badges are rendered by shields.io from the same file, so they show `invalid` until the first deployment.
+
+## Signal journal (`journal.json`)
+
+`journal/` renders the open journal of strategy S1 from `journal.json`: time (UTC), pair, direction of the first 15-minute candle, close after 1 / 4 / 24 hours (%), and status — `pending` until the 4-hour outcome is known, then `real` (a burst within 4 hours) or `false`. The summary shows all signals, real ones, and false signals per real one over signals with a known outcome. Strategy conditions are not published. The page re-reads the file every hour and when the tab becomes visible; if the file is missing it shows "The journal is updating".
 
 ## Adding or editing texts
 

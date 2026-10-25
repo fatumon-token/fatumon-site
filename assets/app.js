@@ -56,6 +56,7 @@
       b.hidden = b.getAttribute('data-lang-block') !== LANG;
     });
     renderUpdated();
+    document.dispatchEvent(new CustomEvent('fatumon:lang'));
   }
 
   function loadLang(lang) {
@@ -118,7 +119,7 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') setOpen(false);
     });
-    window.matchMedia('(min-width: 821px)').addEventListener('change', function (m) {
+    window.matchMedia('(min-width: 961px)').addEventListener('change', function (m) {
       if (m.matches) setOpen(false);
     });
   }
@@ -303,6 +304,90 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh(); });
   }
 
+  /* ---------- журнал сигналов (/journal) ---------- */
+  function initJournal() {
+    var tbody = document.querySelector('[data-journal-rows]');
+    if (!tbody) return;
+    var data = null;
+
+    function esc(s) {
+      return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
+    }
+    function pct(v) {
+      if (typeof v !== 'number') return { txt: '…', cls: 'na' };
+      var s;
+      try {
+        s = new Intl.NumberFormat(LANG, { signDisplay: 'exceptZero', minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
+      } catch (e) { s = (v > 0 ? '+' : '') + v.toFixed(1); }
+      return { txt: s + '%', cls: v > 0 ? 'pos' : (v < 0 ? 'neg' : '') };
+    }
+    function label(key, fb) { return t(key) || fb; }
+
+    function render() {
+      var cells = document.querySelectorAll('[data-jstat]');
+      if (!data || !data.summary || !Array.isArray(data.signals)) {
+        cells.forEach(function (c) { c.textContent = '—'; });
+        tbody.innerHTML = '<tr class="jempty"><td colspan="7">' + esc(label('journal.empty', 'Журнал обновляется')) + '</td></tr>';
+        return;
+      }
+      var sm = data.summary;
+      cells.forEach(function (c) {
+        var k = c.getAttribute('data-jstat');
+        var v = sm[k];
+        if (k === 'false_per_real') {
+          c.textContent = (typeof v === 'number' && sm.real > 0)
+            ? new Intl.NumberFormat(LANG, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v) : '—';
+        } else {
+          c.textContent = typeof v === 'number' ? String(v) : '—';
+        }
+      });
+      if (!data.signals.length) {
+        tbody.innerHTML = '<tr class="jempty"><td colspan="7">' + esc(label('journal.empty', 'Журнал обновляется')) + '</td></tr>';
+        return;
+      }
+      var L = {
+        time: label('journal.th.time', 'Время (UTC)'), coin: label('journal.th.coin', 'Пара'),
+        first: label('journal.th.first', 'Первая свеча'), h1: label('journal.th.h1', '1 ч'),
+        h4: label('journal.th.h4', '4 ч'), h24: label('journal.th.h24', '24 ч'), status: label('journal.th.status', 'Статус')
+      };
+      var html = '';
+      data.signals.forEach(function (s) {
+        var fc = s.first_candle === 'up'
+          ? '<span class="arrow up" aria-label="' + esc(label('journal.first.up', 'вверх')) + '">▲</span>'
+          : s.first_candle === 'down'
+            ? '<span class="arrow down" aria-label="' + esc(label('journal.first.down', 'вниз')) + '">▼</span>'
+            : '<span class="na">…</span>';
+        var st = s.status === 'real' || s.status === 'false' ? s.status : 'pending';
+        var badge = '<span class="jbadge ' + st + '">' + esc(label('journal.status.' + st, st)) + '</span>';
+        var p1 = pct(s.h1), p4 = pct(s.h4), p24 = pct(s.h24);
+        html += '<tr>' +
+          '<td class="time jcell-head" data-label="' + esc(L.time) + '"><span>' + esc(s.time_utc || '') + '</span>' + badge + '</td>' +
+          '<td class="coin" data-label="' + esc(L.coin) + '">' + esc(s.coin || '') + '</td>' +
+          '<td data-label="' + esc(L.first) + '">' + fc + '</td>' +
+          '<td class="num ' + p1.cls + '" data-label="' + esc(L.h1) + '">' + p1.txt + '</td>' +
+          '<td class="num ' + p4.cls + '" data-label="' + esc(L.h4) + '">' + p4.txt + '</td>' +
+          '<td class="num ' + p24.cls + '" data-label="' + esc(L.h24) + '">' + p24.txt + '</td>' +
+          '<td class="jstatus" data-label="' + esc(L.status) + '">' + badge + '</td>' +
+          '</tr>';
+      });
+      tbody.innerHTML = html;
+    }
+
+    function load() {
+      var stamp = Math.floor(Date.now() / 3600000);
+      return fetch(new URL('journal.json?t=' + stamp, ROOT).href, { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+        .then(function (d) { data = d; })
+        .catch(function () { data = null; })
+        .then(render);
+    }
+
+    load();
+    document.addEventListener('fatumon:lang', render);
+    setInterval(function () { if (!document.hidden) load(); }, 60 * 60 * 1000);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) load(); });
+  }
+
   /* ---------- маскот ---------- */
   function initMascot() {
     var svg = document.getElementById('mascot');
@@ -371,6 +456,7 @@
     initLang();
     initStars();
     initStats();
+    initJournal();
     initMascot();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

@@ -197,5 +197,37 @@
   "privacy.meta": "Какие данные обрабатывает Fatumon, зачем, кому передаёт и какие у вас права.",
   "privacy.tag": "// 08 · КОНФИДЕНЦИАЛЬНОСТЬ",
   "privacy.h1": "Политика конфиденциальности",
-  "privacy.site.note": "Сайт fatumon.com хранит только выбор языка в localStorage (строго необходимое); аналитики и cookie-баннера на сайте нет. Получатели данных сайта: GitHub Pages (хостинг), а при обращении — Telegram и почта."
+  "privacy.site.note": "Сайт fatumon.com хранит только выбор языка в localStorage (строго необходимое); аналитики и cookie-баннера на сайте нет. Получатели данных сайта: GitHub Pages (хостинг), а при обращении — Telegram и почта.",
+
+  "common.nav.journal": "Журнал",
+
+  "ecosystem.journal.open": "Открыть журнал →",
+
+  "journal.title": "Журнал сигналов — Fatumon",
+  "journal.meta": "Открытый журнал сигналов стратегии S1: каждый сигнал записывается до исхода и не редактируется.",
+  "journal.tag": "// S1 · ЖУРНАЛ",
+  "journal.h1": "Журнал сигналов",
+  "journal.lead": "Теневой прогон с 25.10.2026. Каждый сигнал записывается до исхода и не редактируется.",
+  "journal.cell.total.label": "SIGNALS",
+  "journal.cell.total.note": "all recorded",
+  "journal.cell.real.label": "REAL",
+  "journal.cell.real.note": "4h burst",
+  "journal.cell.fpr.label": "FALSE / REAL",
+  "journal.cell.fpr.note": "known outcomes",
+  "journal.cells.note": "Настоящий — всплеск в течение 4 часов после сигнала. Учитываются сигналы с известным исходом.",
+  "journal.table.title": "Записи журнала",
+  "journal.th.time": "Время (UTC)",
+  "journal.th.coin": "Пара",
+  "journal.th.first": "Первая свеча",
+  "journal.th.h1": "1 ч",
+  "journal.th.h4": "4 ч",
+  "journal.th.h24": "24 ч",
+  "journal.th.status": "Статус",
+  "journal.status.pending": "ожидает",
+  "journal.status.real": "настоящий",
+  "journal.status.false": "ложный",
+  "journal.first.up": "вверх",
+  "journal.first.down": "вниз",
+  "journal.empty": "Журнал обновляется",
+  "journal.closes": "Закрытие через 1, 4 и 24 часа после сигнала, % к моменту сигнала; «…» — ещё нет данных."
 }
