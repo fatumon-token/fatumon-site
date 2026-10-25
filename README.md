@@ -45,7 +45,7 @@
 
 The site is a plain static website: no framework, no build step, no server. It is served by GitHub Pages and works both at the repository path (`/fatumon-site/`) and at the root of a custom domain, because every path is relative.
 
-- **Pages:** Home · About · How it works · Ecosystem · Journal · Roadmap · Token · Contact · Terms · Privacy
+- **Pages:** Home · About · How it works · Ecosystem · Roadmap · Token · Contact · Terms · Privacy; Journal is reachable by direct link only (not in the menu, `noindex`)
 - **Languages:** Russian and English, switched on the client (`?lang=ru|en`, remembered in `localStorage`)
 - **Live counters:** read from [`stats.json`](stats.json), refreshed by a scheduled export (see below)
 - **Design:** dark space background with drifting glass panels and gold accents
@@ -58,7 +58,7 @@ The site is a plain static website: no framework, no build step, no server. It i
 ├── about/                About
 ├── how/                  How it works
 ├── ecosystem/            Ecosystem (products and their status)
-├── journal/              Signal journal of strategy S1 (reads journal.json)
+├── journal/              Signal journal of strategy S1 (unlisted, noindex; reads journal.json)
 ├── roadmap/              Roadmap (phases, no dates)
 ├── token/                Token
 ├── contact/              Contact

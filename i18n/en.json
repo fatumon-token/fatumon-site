@@ -124,7 +124,7 @@
   "ecosystem.h1": "Ecosystem",
   "ecosystem.lead": "Apps for the trader, the player and the machine — on the same data and the same journal.",
   "ecosystem.journal.title": "Journal and signals",
-  "ecosystem.journal.text": "An open journal: every signal and its outcome, visible to everyone.",
+  "ecosystem.journal.text": "A signal journal: every signal is recorded before its outcome and never edited.",
   "ecosystem.coin.title": "Token breakdown",
   "ecosystem.coin.text": "The full picture of any token, right now — and an explanation of where it came from.",
   "ecosystem.game.title": "Game",
@@ -205,7 +205,6 @@
 
   "common.nav.journal": "Journal",
 
-  "ecosystem.journal.open": "Open journal →",
 
   "journal.title": "Signal journal — Fatumon",
   "journal.meta": "Open signal journal of strategy S1: every signal is recorded before its outcome and never edited.",
