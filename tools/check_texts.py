@@ -142,6 +142,27 @@ QUESTIONABLE = [
 
 TEXT_ATTRS = {"content", "alt", "title", "aria-label", "placeholder"}
 
+# Юридические страницы: Условия и Политика. Там стоп-слова встречаются в контексте
+# «мы НЕ обещаем / НЕ являемся / НЕ лотерея» и в ссылках на регламенты (номера, годы).
+# Для этих страниц перечисленные метки правил считаются допустимыми и выводятся
+# в отчёте одной строкой на страницу («исключение (юр. контекст)»). Остальные
+# метки (обещания: x10, APY, airdrop, earn, будет на Binance и т.п.) проверяются как обычно.
+LEGAL_PAGES = {"terms/index.html", "privacy/index.html"}
+LEGAL_ALLOWED_LABELS = {
+    "цена", "price", "доходность", "дивиденды", "стейкинг", "инвестиции", "buyback", "repurchase",
+    "листинг/пул/LP-лок", "ставки/азарт", "win/prize/odds/casino", "угадай/guess", "cash out points",
+    "приведи друга", "рефералы MLM", "купи шанс", "advisor/консультация", "инсайд/insider",
+    "монета/валюта", "платёжное средство", "ценная бумага", "prospectus", "is not a security",
+    "stable/safe/unruggable", "MiCA/approved", "лицензировано", "anti-dump/blacklist",
+    "дата (год)", "дата (дд.мм.гг)", "месяц EN", "месяц EN (May)", "месяц RU",
+    "страна проживания", "anywhere/worldwide", "доступно всем", "мы — компания/регистрация",
+    "персональные данные/анонимно", "товарный знак/®", "партнёр/при поддержке", "точность N%",
+    "купи/продай сейчас", "навсегда", "деньги покупателей", "airdrop", "play-to-earn", "заработай",
+    "pancakeswap", "PancakeSwap", "дефляция", "deflationary/scarcity", "крипта и инфляция",
+    "инвестиция фонда", "ATH/капитализация/pump", "hold-to-earn/фарм", "ранние инвесторы/presale",
+    "без риска", "FOMO", "limited time", "токен и выручка", "повысим ценность",
+}
+
 # Белый список: исключения, согласованные координатором. Каждое выводится в отчёте
 # отдельной строкой «исключение: …», чтобы его нельзя было пропустить.
 WHITELIST = {
@@ -238,18 +259,28 @@ def main(argv):
             for label, found in hits:
                 rows.append(("README.md", f"строка {n}", f"{found}  [{label}]"))
 
+    legal_summary = {}  # страница -> {метка: число}
     for hf in sorted(site.rglob("*.html")):
         if any(part in ("node_modules", ".git") for part in hf.parts):
             continue
+        rel = hf.relative_to(site).as_posix()
+        is_legal = rel in LEGAL_PAGES
         p = TextExtractor()
         p.feed(hf.read_text(encoding="utf-8"))
         for line, text in p.items:
             hits = scan_text(text, rules)
             if hits and text in WHITELIST:
-                exceptions.append((hf.relative_to(site).as_posix(), f"строка {line}", WHITELIST[text]))
+                exceptions.append((rel, f"строка {line}", WHITELIST[text]))
                 continue
             for label, found in hits:
-                rows.append((hf.relative_to(site).as_posix(), f"строка {line}", f"{found}  [{label}]"))
+                if is_legal and label in LEGAL_ALLOWED_LABELS:
+                    legal_summary.setdefault(rel, {}).setdefault(label, 0)
+                    legal_summary[rel][label] += 1
+                    continue
+                rows.append((rel, f"строка {line}", f"{found}  [{label}]"))
+    for rel, labels in legal_summary.items():
+        desc = ", ".join(f"{k}×{v}" for k, v in sorted(labels.items(), key=lambda kv: -kv[1]))
+        exceptions.append((rel, "юр. контекст", f"допустимые метки в тексте условий/политики (отрицания, ссылки на регламенты): {desc}"))
 
     for f, where, why in exceptions:
         print(f"исключение: {f} · {where} · {why}")
