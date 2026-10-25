@@ -38,7 +38,7 @@
   "home.stats.data.label": "DATA",
   "home.stats.data.note": "order book · futures · funding",
   "home.stats.signals.label": "SIGNALS",
-  "home.stats.signals.note": "live journal, S1",
+  "home.stats.signals.note": "scanner + journals",
   "home.stats.anomalies.label": "ANOMALIES",
   "home.stats.anomalies.note": "in registry",
   "home.stats.anomalies24.label": "ANOMALIES 24H",

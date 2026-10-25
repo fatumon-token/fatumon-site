@@ -116,7 +116,7 @@ The pixel-display row on the home page (exchanges, trading pairs, GB of data, si
 | `exchanges` | exchanges in the collector's symbol map |
 | `coins` | trading pairs tracked (Binance perp + spot) |
 | `data_gb` | size of the raw archive, GB |
-| `signals` | rows in the open signal journal |
+| `signals` | all signals recorded by the scanner and the signal journals |
 | `anomalies` | features in the anomaly registry (shown on the site) |
 | `anomalies_24h` | anomaly events detected in the last 24 hours (rebuilt hourly) |
 | `uptime_days` | consecutive days with complete daily data on all exchanges (exported, not shown) |
