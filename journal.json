@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "EVAA",
+      "first_candle": "up",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-27 19:00"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -43,7 +55,7 @@
     "false_per_real": 0.5,
     "known": 3,
     "real": 2,
-    "total": 3
+    "total": 4
   },
-  "updated_at": "2026-10-27T19:00:01+00:00"
+  "updated_at": "2026-10-27T20:00:01+00:00"
 }
