@@ -15,13 +15,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "DOS",
       "first_candle": "up",
       "h1": 2.7,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 3.7,
+      "status": "real",
       "time_utc": "2026-10-28 14:00"
     },
     {
@@ -112,10 +112,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 2,
-    "false_per_real": 0.4,
-    "known": 7,
-    "real": 5,
+    "false_per_real": 0.33,
+    "known": 8,
+    "real": 6,
     "total": 9
   },
-  "updated_at": "2026-10-28T18:00:02+00:00"
+  "updated_at": "2026-10-28T19:00:02+00:00"
 }
