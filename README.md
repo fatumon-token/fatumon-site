@@ -45,7 +45,7 @@
 
 The site is a plain static website: no framework, no build step, no server. It is served by GitHub Pages and works both at the repository path (`/fatumon-site/`) and at the root of a custom domain, because every path is relative.
 
-- **Pages:** Home · About · How it works · Ecosystem · Roadmap · Token · Contact · Terms · Privacy; Journal is reachable by direct link only (not in the menu, `noindex`)
+- **Pages:** Home · About · How it works · Ecosystem · Games · Roadmap · Token · Contact · Terms · Privacy; Journal is reachable by direct link only (not in the menu, `noindex`)
 - **Languages:** Russian and English, switched on the client (`?lang=ru|en`, remembered in `localStorage`)
 - **Live counters:** read from [`stats.json`](stats.json), refreshed by a scheduled export (see below)
 - **Design:** dark space background with drifting glass panels and gold accents
@@ -58,6 +58,7 @@ The site is a plain static website: no framework, no build step, no server. It i
 ├── about/                About
 ├── how/                  How it works
 ├── ecosystem/            Ecosystem (products and their status)
+├── games/                Games: the Telegram mini app, its games, candle heroes, games roadmap
 ├── journal/              Signal journal of strategy S1 (unlisted, noindex; reads journal.json)
 ├── roadmap/              Roadmap (phases, no dates)
 ├── token/                Token
@@ -69,7 +70,10 @@ The site is a plain static website: no framework, no build step, no server. It i
 │   ├── fonts/            Self-hosted woff2 fonts + LICENSES.md
 │   ├── style.css         Design tokens, @font-face, layout, responsive rules
 │   ├── app.js            i18n, navigation, stars, counters, mascot
-│   └── brand/            Logo, favicon, avatars, OG image (see Brand)
+│   ├── brand/            Logo, favicon, avatars, OG image (see Brand)
+│   └── games/            Art for the Games page, copied from the game
+│       ├── heroes/       Candle hero sprites (hammer, doji, marubozu, engulfing, harami), webp
+│       └── icons/        Game icons icon_<game id>.webp + forecast / tree / rating / friends icons
 ├── i18n/
 │   ├── ru.json           Russian strings (flat keys)
 │   └── en.json           English strings
@@ -156,6 +160,10 @@ Final logo kit in `assets/brand/` (the editable source file is kept outside the 
 | `og-image.png` | 1200×630 social preview (`og:image`, `twitter:image`) |
 
 The animated green candle on the pages is a separate mascot, not the logo.
+
+## Games page
+
+`games/` presents the Telegram mini app [@fatumon_bot](https://t.me/fatumon_bot). Every "Play" button opens `https://t.me/fatumon_bot?startapp=site`: the game's own analytics records the start parameter `site` as a separate source (Telegram start parameters allow only letters, digits, `_` and `-`, so UTM tags cannot be used). Game names and descriptions are taken from the game's dictionaries without rewording; the art in `assets/games/` is copied from the game's asset folder. The "Rules" link points to the Points section of the Terms (`terms/#game`); the anchor is moved by `app.js` to whichever language block is visible.
 
 ## Fonts
 

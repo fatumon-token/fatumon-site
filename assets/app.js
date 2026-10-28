@@ -55,6 +55,13 @@
     document.querySelectorAll('[data-lang-block]').forEach(function (b) {
       b.hidden = b.getAttribute('data-lang-block') !== LANG;
     });
+    // якорь (например, /terms/#game) есть в обоих языковых блоках: id получает только видимый
+    document.querySelectorAll('[data-anchor]').forEach(function (el) {
+      var name = el.getAttribute('data-anchor');
+      var blk = el.closest('[data-lang-block]');
+      if (!blk || !blk.hidden) el.id = name;
+      else if (el.id === name) el.removeAttribute('id');
+    });
     renderUpdated();
     document.dispatchEvent(new CustomEvent('fatumon:lang'));
   }
@@ -69,7 +76,19 @@
       .then(function () {
         applyDict();
         html.classList.remove('i18n-loading');
+        scrollToHash();
       });
+  }
+
+  // после первой подстановки текстов вёрстка меняется (язык, блоки) — довести до якоря ещё раз
+  var hashDone = false;
+  function scrollToHash() {
+    if (hashDone) return;
+    hashDone = true;
+    if (!location.hash || location.hash.length < 2) return;
+    var el = null;
+    try { el = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) {}
+    if (el) el.scrollIntoView({ block: 'start', behavior: 'auto' });
   }
 
   function initLang() {

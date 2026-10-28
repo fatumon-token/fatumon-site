@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ru" class="i18n-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="games.title">Игры — Fatumon</title>
+<meta name="description" content="Развлекательные и обучающие мини-игры с героями-свечами — прямо в Telegram." data-i18n-attr="content:games.meta">
+<meta property="og:title" content="Игры — Fatumon" data-i18n-attr="content:games.title">
+<meta property="og:description" content="Развлекательные и обучающие мини-игры с героями-свечами — прямо в Telegram." data-i18n-attr="content:games.meta">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fatumon.com/games/">
+<meta property="og:site_name" content="Fatumon">
+<meta property="og:image" content="https://fatumon.com/assets/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fatumon — знак проекта" data-i18n-attr="content:common.og.alt">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@fatumon_token">
+<meta name="twitter:image" content="https://fatumon.com/assets/brand/og-image.png">
+<meta name="twitter:image:alt" content="Fatumon — знак проекта" data-i18n-attr="content:common.og.alt">
+<meta name="theme-color" content="#060912">
+<link rel="icon" href="../assets/brand/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/logo.svg">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+<noscript><style>html.i18n-loading body{visibility:visible}</style></noscript>
+</head>
+<body data-page="games">
+
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-violet"></div>
+  <div class="blob blob-blue"></div>
+  <div class="blob blob-pink"></div>
+  <canvas id="stars"></canvas>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="../"><img src="../assets/brand/logo.svg" alt="" width="28" height="28"><span>Fatumon</span></a>
+    <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-attr="aria-label:common.nav.label">
+      <a href="../" data-nav="home" data-i18n="common.nav.home">Главная</a>
+      <a href="../about/" data-nav="about" data-i18n="common.nav.about">О нас</a>
+      <a href="../how/" data-nav="how" data-i18n="common.nav.how">Как это работает</a>
+      <a href="../ecosystem/" data-nav="ecosystem" data-i18n="common.nav.ecosystem">Экосистема</a>
+      <a href="../games/" data-nav="games" data-i18n="common.nav.games">Игры</a>
+      <a href="../roadmap/" data-nav="roadmap" data-i18n="common.nav.roadmap">Дорожная карта</a>
+      <a href="../token/" data-nav="token" data-i18n="common.nav.token">Токен</a>
+      <a href="../contact/" data-nav="contact" data-i18n="common.nav.contact">Контакты</a>
+    </nav>
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-attr="aria-label:common.lang.label">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню" data-i18n-attr="aria-label:common.burger">
+        <svg class="ic-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        <svg class="ic-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Верх -->
+  <section class="wrap page-head g-hero">
+    <div class="g-hero-text">
+      <span class="tag" data-i18n="games.tag">// 06 · ИГРЫ</span>
+      <h1 data-i18n="games.h1">Игры Fatumon</h1>
+      <p class="lead" data-i18n="games.lead">Развлекательные и обучающие мини-игры с героями-свечами — прямо в Telegram.</p>
+      <div class="hero-actions g-actions">
+        <a class="btn btn-primary" href="https://t.me/fatumon_bot?startapp=site" target="_blank" rel="noopener" data-i18n="games.play">Играть</a>
+        <a class="btn btn-ghost" href="#inside" data-i18n="games.inside.link">Что внутри</a>
+      </div>
+      <p class="hero-note" data-i18n="games.hero.note">Открывается в Telegram, ничего устанавливать не нужно.</p>
+    </div>
+    <div class="g-stage" role="img" aria-label="Герои-свечи Fatumon: Молот, Доджи, Марубозу, Поглощение и Харами" data-i18n-attr="aria-label:games.hero.alt">
+      <div class="mascot g-stage-mascot" aria-hidden="true">
+      <svg id="mascot" viewBox="0 0 200 240" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4ADE80"/>
+            <stop offset=".6" stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#15803D"/>
+          </linearGradient>
+          <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4ADE80" stop-opacity=".2"/>
+            <stop offset=".5" stop-color="#4ADE80"/>
+            <stop offset="1" stop-color="#4ADE80" stop-opacity=".2"/>
+          </linearGradient>
+          <filter id="mglow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="10"/>
+          </filter>
+        </defs>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)" opacity=".55" filter="url(#mglow)"/>
+        <rect x="97" y="14" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="97" y="172" width="6" height="56" rx="3" fill="url(#mw)"/>
+        <rect x="62" y="66" width="76" height="110" rx="16" fill="url(#mg)"/>
+        <rect x="70" y="74" width="60" height="18" rx="9" fill="#BBF7D0" opacity=".35"/>
+        <g class="eye">
+          <circle cx="85" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="85" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="86.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <g class="eye">
+          <circle cx="115" cy="116" r="10" fill="#fff"/>
+          <g class="pupil">
+            <circle cx="115" cy="116" r="4.6" fill="#052e16"/>
+            <circle cx="116.8" cy="114" r="1.4" fill="#fff"/>
+          </g>
+        </g>
+        <path d="M92 140 q8 6 16 0" fill="none" stroke="#052e16" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+      </svg>
+      </div>
+      <img src="../assets/games/heroes/doji.webp" alt="" width="145" height="192" class="g-h g-h-doji">
+      <img src="../assets/games/heroes/marubozu.webp" alt="" width="217" height="227" class="g-h g-h-marubozu">
+      <img src="../assets/games/heroes/hammer.webp" alt="" width="137" height="202" class="g-h g-h-hammer">
+      <img src="../assets/games/heroes/engulfing.webp" alt="" width="158" height="203" class="g-h g-h-engulfing">
+      <img src="../assets/games/heroes/harami.webp" alt="" width="183" height="206" class="g-h g-h-harami">
+    </div>
+  </section>
+
+  <!-- 2. Кто мы и зачем игры -->
+  <section class="wrap section g-first">
+    <div class="card card-lg block g-about">
+      <div class="block-head"><svg class="px-icon" style="--px:#4ADE80" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM7 7h1v1h-1z" fill="currentColor"/></svg><span class="tag" data-i18n="games.about.tag">// ЗАЧЕМ ИГРЫ</span></div>
+      <h2 data-i18n="games.about.title">Кто мы и зачем игры</h2>
+      <p data-i18n="games.about.p1">Fatumon — проект ИИ-исследования рынка: исследователь стратегий, рыночные данные, анализ.</p>
+      <p data-i18n="games.about.p2">Игры — часть экосистемы. В игровой форме знакомишься с языком графика — свечами и фигурами, соревнуешься с друзьями и просто отдыхаешь.</p>
+      <p class="why" data-i18n="games.about.free">Без ставок, без вложений денег.</p>
+      <p class="g-token"><a href="../token/" data-i18n="games.about.token">Токен экосистемы — в разделе «Токен» →</a></p>
+    </div>
+  </section>
+
+  <!-- 3. Что внутри -->
+  <section class="wrap section" id="inside">
+    <div class="section-head">
+      <span class="tag" data-i18n="games.inside.tag">// ЧТО ВНУТРИ</span>
+      <h2 data-i18n="games.inside.title">20+ игр в одном мини-приложении</h2>
+      <p class="lead" data-i18n="games.inside.lead">Флагман «Осада», аркады, головоломки и классика — плюс прогнозы, дерево-свеча и рейтинг.</p>
+    </div>
+
+    <div class="card card-lg g-siege">
+      <img class="g-siege-icon" src="../assets/games/icons/icon_siege.webp" alt="" width="256" height="256" loading="lazy">
+      <div>
+        <div class="g-siege-top"><svg class="px-icon" style="--px:#FBC43A" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1z" fill="currentColor"/></svg><span class="g-badge" data-i18n="games.badge.premium">Премиум</span></div>
+        <h3 data-i18n="games.g.siege.name">Осада</h3>
+        <p data-i18n="games.g.siege.desc">Фатумон против волн медведей: выживай, выбирай навыки, качайся на искрах.</p>
+        <p class="g-flag" data-i18n="games.siege.flag">Флагман: герои-свечи, миры и боссы.</p>
+      </div>
+    </div>
+
+    <div class="g-cols">
+      <div class="card card-lg g-col" id="hits">
+        <div class="g-col-head"><svg class="px-icon" style="--px:#F472B6" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM7 7h1v1h-1z" fill="currentColor"/></svg><h3 data-i18n="games.col.hits.title">Хиты</h3><span class="g-count" data-i18n="games.col.count7">7 игр</span></div>
+        <p class="g-col-text" data-i18n="games.col.hits.text">По мотивам самых популярных мобильных игр — свои персонажи и своя графика.</p>
+        <ul class="g-games">
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_runner3d.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.runner3d.name">Candle Rush 3D</h4><p data-i18n="games.g.runner3d.desc">Свеча бежит по трём дорожкам графика: уклоняйся от медведей, собирай искры.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_jetpack.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.jetpack.name">Candle Jet</h4><p data-i18n="games.g.jetpack.desc">Свеча с реактивным ранцем: держи высоту, облетай медведей.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_sling.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.sling.name">Candle Sling</h4><p data-i18n="games.g.sling.desc">Запускай свечу из рогатки по стенкам ликвидаций.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_climb.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.climb.name">Chart Climb</h4><p data-i18n="games.g.climb.desc">Машинка-свеча едет по линии графика: газ, тормоз, топливо.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_rhythm.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.rhythm.name">Candle Beat</h4><p data-i18n="games.g.rhythm.desc">Свечи падают в такт музыке — касайся точно в ритм.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_sniper.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.sniper.name">Fatumon Aim</h4><p data-i18n="games.g.sniper.desc">Прицел в 3D: медведи и ликвидации, у каждого уровня своя цель.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_defense.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.defense.name">Chart Defense</h4><p data-i18n="games.g.defense.desc">Защити график: расставляй свечи-защитников против волн медведей.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="card card-lg g-col" id="iq">
+        <div class="g-col-head"><svg class="px-icon" style="--px:#9BE8FF" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M3 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1z" fill="currentColor"/></svg><h3 data-i18n="games.col.iq.title">Головоломки и IQ</h3><span class="g-count" data-i18n="games.col.count6">6 игр</span></div>
+        <p class="g-col-text" data-i18n="games.col.iq.text">Головоломки на логику. После уровня — твой IQ сегодня и место среди игроков дня.</p>
+        <ul class="g-games">
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_iqblocks.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.iqblocks.name">Fatumon IQ</h4><p data-i18n="games.g.iqblocks.desc">Размещай фигуры-свечи и очищай ряды. После уровня — твой IQ.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_sort.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.sort.name">Candle Sort</h4><p data-i18n="games.g.sort.desc">Разложи свечи по колбам: в каждой — один цвет.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_tiles.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.tiles.name">Fatumon Tiles</h4><p data-i18n="games.g.tiles.desc">Собирай по три одинаковые плитки, пока поле не опустеет.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_coin2048.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.coin2048.name">Fatumon Fusion</h4><p data-i18n="games.g.coin2048.desc">Сдвигай плитки-свечи: две одинаковые сливаются в одну, побольше.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_link.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.link.name">Chart Link</h4><p data-i18n="games.g.link.desc">Соедини точки одного цвета линиями без пересечений.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_escape.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.escape.name">Candle Escape</h4><p data-i18n="games.g.escape.desc">Двигай свечи и выведи золотую к выходу.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="card card-lg g-col" id="classic">
+        <div class="g-col-head"><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM5 0h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM7 5h1v1h-1zM0 6h1v1h-1zM2 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1z" fill="currentColor"/></svg><h3 data-i18n="games.col.classic.title">Классика</h3><span class="g-count" data-i18n="games.col.count6">6 игр</span></div>
+        <p class="g-col-text" data-i18n="games.col.classic.text">Шесть игр. У каждого уровня есть проверенный путь прохождения.</p>
+        <ul class="g-games">
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_merge.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.merge.name">Fatumon Merge</h4><p data-i18n="games.g.merge.desc">Собирай заказы: сливай одинаковые знаки — от сатоши до BTC.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_match.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.match.name">Fatumon Match</h4><p data-i18n="games.g.match.desc">Три в ряд со спецфишками: ракета, бомба, радуга. Лёд, ящики, сундуки.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_run.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.run.name">Fatumon Run</h4><p data-i18n="games.g.run.desc">Свеча бежит по графику: прыгай по свечам, обходи медведей и ликвидации.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_bear.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.bear.name">Bear Market</h4><p data-i18n="games.g.bear.desc">Корабль-свеча против падающих красных свечей и астероидов-дампов.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_blocks.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.blocks.name">Fatumon Blocks</h4><p data-i18n="games.g.blocks.desc">Фигуры из криптознаков падают на поле — собирай полные ряды.</p></div>
+          </li>
+          <li class="g-game">
+            <img src="../assets/games/icons/icon_snake.webp" alt="" width="256" height="256" loading="lazy">
+            <div><h4 data-i18n="games.g.snake.name">Fatumon Trail</h4><p data-i18n="games.g.snake.desc">Свеча растёт с каждым огоньком: собирай, не задевай стены и свой хвост.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="g-features">
+      <div class="card g-feature">
+        <img src="../assets/games/icons/icon_predict.webp" alt="" width="192" height="192" loading="lazy">
+        <div>
+          <h3 data-i18n="games.predict.title">Прогноз-викторина</h3>
+          <p data-i18n="games.predict.text">Смотришь на график и решаешь, куда пойдёт следующая свеча — вверх или вниз. Итог приходит в бот.</p>
+        </div>
+      </div>
+      <div class="card g-feature">
+        <img src="../assets/games/icons/icon_tree.webp" alt="" width="191" height="192" loading="lazy">
+        <div>
+          <h3 data-i18n="games.tree.title">Дерево-свеча</h3>
+          <p data-i18n="games.tree.text">Поливай своё дерево каждый день — друзья поливают его вместе с тобой. С дерева срываешь карточки фигур графика.</p>
+        </div>
+      </div>
+      <div class="card g-feature">
+        <img src="../assets/games/icons/icon_rating.webp" alt="" width="189" height="192" loading="lazy">
+        <div>
+          <h3 data-i18n="games.rating.title">Рейтинг и вызовы друзьям</h3>
+          <p data-i18n="games.rating.text">Рейтинг недели и «Брось вызов другу»: отправь ссылку на свой уровень или рекорд — друг попадёт прямо в него.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Обучение без скуки -->
+  <section class="wrap section">
+    <div class="section-head">
+      <span class="tag" data-i18n="games.learn.tag">// ОБУЧЕНИЕ</span>
+      <h2 data-i18n="games.learn.title">Обучение без скуки</h2>
+      <p class="lead" data-i18n="games.learn.lead">Каждая свеча-персонаж — настоящая фигура свечного графика. Характер героя повторяет смысл фигуры: играешь — и запоминаешь, что она значит.</p>
+    </div>
+    <div class="g-heroes">
+      <div class="card g-hero-card">
+        <div class="g-hero-pic"><img src="../assets/games/heroes/hammer.webp" alt="Молот" data-i18n-attr="alt:games.hero.hammer.name" width="137" height="202" loading="lazy"></div>
+        <div>
+          <h3 data-i18n="games.hero.hammer.name">Молот</h3>
+          <p class="g-fig"><span class="g-k" data-i18n="games.learn.fig">Фигура</span> <span data-i18n="games.hero.hammer.fig">Разворот вниз → вверх, длинная тень снизу.</span></p>
+          <p class="g-char"><span class="g-k" data-i18n="games.learn.char">Характер</span> <span data-i18n="games.hero.hammer.char">Отскакивает от дна: волной отбрасывает врагов и встаёт, когда почти побеждён.</span></p>
+        </div>
+      </div>
+      <div class="card g-hero-card">
+        <div class="g-hero-pic"><img src="../assets/games/heroes/doji.webp" alt="Доджи" data-i18n-attr="alt:games.hero.doji.name" width="145" height="192" loading="lazy"></div>
+        <div>
+          <h3 data-i18n="games.hero.doji.name">Доджи</h3>
+          <p class="g-fig"><span class="g-k" data-i18n="games.learn.fig">Фигура</span> <span data-i18n="games.hero.doji.fig">Нерешительность: открытие и закрытие почти совпадают.</span></p>
+          <p class="g-char"><span class="g-k" data-i18n="games.learn.char">Характер</span> <span data-i18n="games.hero.doji.char">Колеблется — и потому неуловим: часть ударов проходит мимо, враги рядом замедляются.</span></p>
+        </div>
+      </div>
+      <div class="card g-hero-card">
+        <div class="g-hero-pic"><img src="../assets/games/heroes/marubozu.webp" alt="Марубозу" data-i18n-attr="alt:games.hero.marubozu.name" width="217" height="227" loading="lazy"></div>
+        <div>
+          <h3 data-i18n="games.hero.marubozu.name">Марубозу</h3>
+          <p class="g-fig"><span class="g-k" data-i18n="games.learn.fig">Фигура</span> <span data-i18n="games.hero.marubozu.fig">Сильная свеча без теней.</span></p>
+          <p class="g-char"><span class="g-k" data-i18n="games.learn.char">Характер</span> <span data-i18n="games.hero.marubozu.char">Идёт напролом: снаряды пробивают врагов насквозь, его не сбить с пути.</span></p>
+        </div>
+      </div>
+      <div class="card g-hero-card">
+        <div class="g-hero-pic"><img src="../assets/games/heroes/engulfing.webp" alt="Поглощение" data-i18n-attr="alt:games.hero.engulfing.name" width="158" height="203" loading="lazy"></div>
+        <div>
+          <h3 data-i18n="games.hero.engulfing.name">Поглощение</h3>
+          <p class="g-fig"><span class="g-k" data-i18n="games.learn.fig">Фигура</span> <span data-i18n="games.hero.engulfing.fig">Большая свеча «съедает» прошлую.</span></p>
+          <p class="g-char"><span class="g-k" data-i18n="games.learn.char">Характер</span> <span data-i18n="games.hero.engulfing.char">Растёт по ходу боя: с каждой волной врагов становится сильнее.</span></p>
+        </div>
+      </div>
+      <div class="card g-hero-card">
+        <div class="g-hero-pic"><img src="../assets/games/heroes/harami.webp" alt="Харами" data-i18n-attr="alt:games.hero.harami.name" width="183" height="206" loading="lazy"></div>
+        <div>
+          <h3 data-i18n="games.hero.harami.name">Харами</h3>
+          <p class="g-fig"><span class="g-k" data-i18n="games.learn.fig">Фигура</span> <span data-i18n="games.hero.harami.fig">Маленькая свеча внутри большой.</span></p>
+          <p class="g-char"><span class="g-k" data-i18n="games.learn.char">Характер</span> <span data-i18n="games.hero.harami.char">Прячется внутри: щит-пузырь гасит удар.</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="note g-learn-note" data-i18n="games.learn.note">Фигуры из учебника, не сигнал к сделке.</p>
+  </section>
+
+  <!-- 5. Дорожная карта игр -->
+  <section class="wrap section">
+    <div class="section-head">
+      <span class="tag" data-i18n="games.road.tag">// ПЛАНЫ</span>
+      <h2 data-i18n="games.road.title">Дорожная карта игр</h2>
+      <p class="lead" data-i18n="games.road.lead">Без дат: что уже работает и что будет дальше.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item done">
+        <div class="card">
+          <h3><svg class="px-icon" style="--px:#4ADE80" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M3 0h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM3 6h1v1h-1zM3 7h1v1h-1z" fill="currentColor"/></svg><span data-i18n="games.road.now.title">Сейчас</span></h3>
+          <ul class="list">
+            <li data-i18n="games.road.now.1">20+ мини-игр</li>
+            <li data-i18n="games.road.now.2">рейтинг и вызовы друзьям</li>
+            <li data-i18n="games.road.now.3">иврит, русский и английский</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="card">
+          <h3><svg class="px-icon" style="--px:#e0bf88" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM7 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1z" fill="currentColor"/></svg><span data-i18n="games.road.next.title">Дальше</span></h3>
+          <ul class="list">
+            <li data-i18n="games.road.next.1">премиум-игра «Осада» с мирами и боссами</li>
+            <li data-i18n="games.road.next.2">коллекция персонажей</li>
+            <li data-i18n="games.road.next.3">турниры и сезоны</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="card">
+          <h3><svg class="px-icon" style="--px:#A78BFA" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM1 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM7 5h1v1h-1zM1 6h1v1h-1zM6 6h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1z" fill="currentColor"/></svg><span data-i18n="games.road.later.title">В планах</span></h3>
+          <ul class="list">
+            <li data-i18n="games.road.later.1">онлайн-режимы и совместные игры с друзьями</li>
+            <li data-i18n="games.road.later.2">приложение для телефона</li>
+            <li data-i18n="games.road.later.3">связь игр с экосистемой Fatumon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Ранние игроки -->
+  <section class="wrap section">
+    <div class="card card-lg block g-early">
+      <div class="block-head"><svg class="px-icon" style="--px:#F472B6" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges"><path d="M1 1h1v1h-1zM2 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM1 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM0 4h1v1h-1zM1 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM1 5h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1z" fill="currentColor"/></svg><span class="tag" data-i18n="games.early.tag">// РАННИЕ ИГРОКИ</span></div>
+      <h2 data-i18n="games.early.title">Ранние игроки</h2>
+      <p data-i18n="games.early.text">Мы ценим тех, кто с нами с самого начала. Активность ранних игроков мы планируем учесть при развитии экосистемы Fatumon. Условия будут опубликованы отдельно, могут меняться и могут быть доступны не во всех странах.</p>
+      <p class="g-small" data-i18n="games.early.small">Очки в играх не являются деньгами и не обмениваются на деньги. Ничего не гарантируется. 18+.</p>
+    </div>
+  </section>
+
+  <!-- 7. Низ -->
+  <section class="wrap section">
+    <div class="card card-lg g-cta">
+      <h2 data-i18n="games.cta.title">Играть в Telegram</h2>
+      <p data-i18n="games.cta.text">Игры открываются в @fatumon_bot — прямо в Telegram.</p>
+      <a class="btn btn-primary" href="https://t.me/fatumon_bot?startapp=site" target="_blank" rel="noopener" data-i18n="games.play">Играть</a>
+      <div class="g-links">
+        <a href="../terms/#game" data-i18n="games.links.rules">Правила</a>
+        <a href="../terms/" data-i18n="games.links.terms">Условия</a>
+        <a href="../privacy/" data-i18n="games.links.privacy">Конфиденциальность</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="https://t.me/fatumon" target="_blank" rel="noopener" data-i18n="common.footer.telegram">Telegram</a>
+      <a href="https://x.com/fatumon_token" target="_blank" rel="noopener" data-i18n="common.footer.x">X</a>
+      <a href="https://github.com/fatumon-token" target="_blank" rel="noopener" data-i18n="common.footer.github">GitHub</a>
+      <a href="mailto:fatumon.token@gmail.com" data-i18n="common.footer.mail">Почта</a>
+      <a href="../terms/" data-i18n="common.footer.terms">Условия</a>
+      <a href="../privacy/" data-i18n="common.footer.privacy">Конфиденциальность</a>
+    </div>
+    <div class="copy" data-i18n="common.footer.copy">© Fatumon</div>
+  </div>
+  <div class="wrap"><p class="foot-disclaimer" data-i18n="common.footer.disclaimer">Это исследовательская платформа, не финансовый совет. 18+</p></div>
+</footer>
+
+</body>
+</html>
