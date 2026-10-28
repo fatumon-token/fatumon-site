@@ -1,15 +1,27 @@
 {
   "signals": [
     {
-      "burst_1h": true,
+      "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "XPIN",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-28 20:15"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": true,
       "coin": "EVAA",
       "first_candle": "up",
       "h1": -0.5,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 2.1,
+      "status": "real",
       "time_utc": "2026-10-28 15:15"
     },
     {
@@ -62,12 +74,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "EVAA",
       "first_candle": "up",
       "h1": 6.3,
-      "h24": null,
+      "h24": 71.3,
       "h4": 9.9,
       "status": "false",
       "time_utc": "2026-10-27 19:00"
@@ -112,10 +124,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 2,
-    "false_per_real": 0.33,
-    "known": 8,
-    "real": 6,
-    "total": 9
+    "false_per_real": 0.29,
+    "known": 9,
+    "real": 7,
+    "total": 10
   },
-  "updated_at": "2026-10-28T19:00:02+00:00"
+  "updated_at": "2026-10-28T21:00:02+00:00"
 }
