@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "XPIN",
-      "first_candle": null,
-      "h1": null,
+      "first_candle": "down",
+      "h1": -10.9,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -129,5 +129,5 @@
     "real": 7,
     "total": 10
   },
-  "updated_at": "2026-10-28T21:00:02+00:00"
+  "updated_at": "2026-10-28T22:00:02+00:00"
 }
