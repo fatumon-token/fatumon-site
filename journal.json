@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "EVAA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-28 15:15"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "DOS",
       "first_candle": "up",
-      "h1": null,
+      "h1": 2.7,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -103,7 +115,7 @@
     "false_per_real": 0.4,
     "known": 7,
     "real": 5,
-    "total": 8
+    "total": 9
   },
-  "updated_at": "2026-10-28T15:00:02+00:00"
+  "updated_at": "2026-10-28T16:00:02+00:00"
 }
