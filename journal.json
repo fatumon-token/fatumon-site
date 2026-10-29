@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "IDOL",
       "first_candle": "up",
       "h1": 15.1,
-      "h24": null,
+      "h24": 17.4,
       "h4": 16.4,
       "status": "real",
       "time_utc": "2026-10-28 22:00"
@@ -165,5 +165,5 @@
     "real": 9,
     "total": 13
   },
-  "updated_at": "2026-10-29T22:00:01+00:00"
+  "updated_at": "2026-10-29T23:00:01+00:00"
 }
