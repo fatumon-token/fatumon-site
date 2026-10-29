@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "IDOL",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -74,12 +74,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "BLESS",
       "first_candle": "up",
       "h1": 4.8,
-      "h24": null,
+      "h24": -21.7,
       "h4": -12.1,
       "status": "real",
       "time_utc": "2026-10-28 10:15"
@@ -165,5 +165,5 @@
     "real": 9,
     "total": 13
   },
-  "updated_at": "2026-10-29T10:00:01+00:00"
+  "updated_at": "2026-10-29T11:00:01+00:00"
 }
