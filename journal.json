@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "XPIN",
       "first_candle": "down",
       "h1": -10.9,
-      "h24": null,
+      "h24": -27.0,
       "h4": -18.4,
       "status": "real",
       "time_utc": "2026-10-28 20:15"
@@ -165,5 +165,5 @@
     "real": 9,
     "total": 13
   },
-  "updated_at": "2026-10-29T20:00:01+00:00"
+  "updated_at": "2026-10-29T21:00:01+00:00"
 }
