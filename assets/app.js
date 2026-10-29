@@ -6,6 +6,7 @@
   var html = document.documentElement;
   var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var DICT = {};
+  var CONFIG = {};   // config.json: числа, которые правятся руками (например, game.languages)
   var LANG = 'ru';
   var updatedAt = null;
 
@@ -25,8 +26,33 @@
     return n.indexOf('ru') === 0 ? 'ru' : 'en';
   }
 
+  function cfg(path) {
+    return path.split('.').reduce(function (o, k) { return o != null ? o[k] : null; }, CONFIG);
+  }
+
+  // «{game.languages}» → число из config.json; «{game.languages|язык|языка|языков}» → форма слова по числу
+  var PLURAL_INDEX = { one: 0, few: 1, many: 2 };
+  function fill(s) {
+    return s.replace(/\{([\w.]+)((?:\|[^|}]*)*)\}/g, function (m, path, forms) {
+      var n = cfg(path);
+      if (typeof n !== 'number') return m;
+      if (!forms) return String(n);
+      var list = forms.slice(1).split('|');
+      var cat = 'other';
+      try { cat = new Intl.PluralRules(LANG).select(n); } catch (e) {}
+      var i = PLURAL_INDEX[cat];
+      return list[i != null && i < list.length ? i : list.length - 1];
+    });
+  }
+
   function t(key) {
-    return Object.prototype.hasOwnProperty.call(DICT, key) ? DICT[key] : null;
+    if (!Object.prototype.hasOwnProperty.call(DICT, key)) return null;
+    var v = DICT[key];
+    if (typeof v === 'string' && v.indexOf('{') >= 0) {
+      v = fill(v);
+      if (/\{[\w.]+(\|[^}]*)?\}/.test(v)) return null;   // числа нет — остаётся текст из HTML
+    }
+    return v;
   }
 
   function applyDict() {
@@ -66,13 +92,19 @@
     document.dispatchEvent(new CustomEvent('fatumon:lang'));
   }
 
+  var configReady = fetch(new URL('config.json', ROOT).href, { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+    .then(function (c) { CONFIG = c || {}; })
+    .catch(function () { CONFIG = {}; });
+
   function loadLang(lang) {
     LANG = lang;
     var url = new URL('i18n/' + lang + '.json', ROOT);
-    return fetch(url.href, { cache: 'no-cache' })
+    var dict = fetch(url.href, { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
       .then(function (d) { DICT = d; })
-      .catch(function () { DICT = {}; })
+      .catch(function () { DICT = {}; });
+    return Promise.all([dict, configReady])
       .then(function () {
         applyDict();
         html.classList.remove('i18n-loading');

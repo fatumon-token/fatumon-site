@@ -305,7 +305,7 @@
   "games.road.now.title": "Now",
   "games.road.now.1": "20+ mini games",
   "games.road.now.2": "a leaderboard and challenges to friends",
-  "games.road.now.3": "Hebrew, Russian and English",
+  "games.road.now.3": "{game.languages} {game.languages|language|languages}",
   "games.road.next.title": "Next",
   "games.road.next.1": "the premium game “Candle Siege” with worlds and bosses",
   "games.road.next.2": "a character collection",

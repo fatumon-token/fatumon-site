@@ -305,7 +305,7 @@
   "games.road.now.title": "Сейчас",
   "games.road.now.1": "20+ мини-игр",
   "games.road.now.2": "рейтинг и вызовы друзьям",
-  "games.road.now.3": "иврит, русский и английский",
+  "games.road.now.3": "{game.languages} {game.languages|язык|языка|языков}",
   "games.road.next.title": "Дальше",
   "games.road.next.1": "премиум-игра «Осада» с мирами и боссами",
   "games.road.next.2": "коллекция персонажей",

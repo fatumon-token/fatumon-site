@@ -77,6 +77,7 @@ The site is a plain static website: no framework, no build step, no server. It i
 ├── i18n/
 │   ├── ru.json           Russian strings (flat keys)
 │   └── en.json           English strings
+├── config.json           Hand-edited numbers used in strings, e.g. `{game.languages}`
 ├── stats.json            Live counters (generated, do not edit by hand)
 ├── tools/
 │   └── check_texts.py    Stop-word check for all public texts
