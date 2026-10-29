@@ -15,13 +15,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "XPIN",
       "first_candle": "down",
       "h1": -10.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -18.4,
+      "status": "real",
       "time_utc": "2026-10-28 20:15"
     },
     {
@@ -136,10 +136,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 2,
-    "false_per_real": 0.29,
-    "known": 9,
-    "real": 7,
+    "false_per_real": 0.25,
+    "known": 10,
+    "real": 8,
     "total": 11
   },
-  "updated_at": "2026-10-29T00:00:02+00:00"
+  "updated_at": "2026-10-29T01:00:02+00:00"
 }
