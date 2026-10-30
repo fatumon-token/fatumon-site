@@ -1,24 +1,24 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "ON",
       "first_candle": "down",
-      "h1": null,
+      "h1": -13.0,
       "h24": null,
       "h4": null,
       "status": "pending",
       "time_utc": "2026-10-30 09:00"
     },
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "MAGMA",
       "first_candle": "down",
-      "h1": null,
+      "h1": 1.1,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "IDOL",
       "first_candle": "up",
       "h1": -2.5,
-      "h24": null,
+      "h24": 17.9,
       "h4": 3.4,
       "status": "false",
       "time_utc": "2026-10-29 09:45"
@@ -189,5 +189,5 @@
     "real": 9,
     "total": 15
   },
-  "updated_at": "2026-10-30T10:00:02+00:00"
+  "updated_at": "2026-10-30T11:00:02+00:00"
 }
