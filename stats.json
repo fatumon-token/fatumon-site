@@ -1,10 +1,10 @@
 {
   "anomalies": 40,
-  "anomalies_24h": 111,
+  "anomalies_24h": 113,
   "coins": 474,
   "data_gb": 244,
   "exchanges": 8,
   "signals": 523,
-  "updated_at": "2026-10-30T13:00:02+00:00",
+  "updated_at": "2026-10-30T14:00:02+00:00",
   "uptime_days": 6
 }

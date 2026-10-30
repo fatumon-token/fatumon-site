@@ -3,25 +3,25 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "ON",
       "first_candle": "down",
       "h1": -13.0,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -8.5,
+      "status": "real",
       "time_utc": "2026-10-30 09:00"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "MAGMA",
       "first_candle": "down",
       "h1": 1.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 0.4,
+      "status": "false",
       "time_utc": "2026-10-30 08:45"
     },
     {
@@ -183,11 +183,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 4,
-    "false_per_real": 0.44,
-    "known": 13,
-    "real": 9,
+    "false": 5,
+    "false_per_real": 0.5,
+    "known": 15,
+    "real": 10,
     "total": 15
   },
-  "updated_at": "2026-10-30T13:00:02+00:00"
+  "updated_at": "2026-10-30T14:00:02+00:00"
 }
