@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "MAGMA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-30 08:45"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -163,7 +175,7 @@
     "false_per_real": 0.44,
     "known": 13,
     "real": 9,
-    "total": 13
+    "total": 14
   },
-  "updated_at": "2026-10-30T08:00:05+00:00"
+  "updated_at": "2026-10-30T09:00:02+00:00"
 }
