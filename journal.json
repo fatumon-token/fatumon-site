@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "SQD",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-30 18:30"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "IDOL",
       "first_candle": "up",
-      "h1": null,
+      "h1": 16.4,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -199,7 +211,7 @@
     "false_per_real": 0.5,
     "known": 15,
     "real": 10,
-    "total": 16
+    "total": 17
   },
-  "updated_at": "2026-10-30T18:00:03+00:00"
+  "updated_at": "2026-10-30T19:00:06+00:00"
 }
