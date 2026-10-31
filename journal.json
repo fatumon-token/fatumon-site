@@ -3,25 +3,25 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "GWEI",
       "first_candle": "up",
       "h1": -1.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -2.8,
+      "status": "false",
       "time_utc": "2026-10-30 19:15"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "SQD",
       "first_candle": "up",
       "h1": 0.2,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -0.1,
+      "status": "false",
       "time_utc": "2026-10-30 18:30"
     },
     {
@@ -219,11 +219,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 5,
-    "false_per_real": 0.45,
-    "known": 16,
+    "false": 7,
+    "false_per_real": 0.64,
+    "known": 18,
     "real": 11,
     "total": 18
   },
-  "updated_at": "2026-10-30T23:00:02+00:00"
+  "updated_at": "2026-10-31T00:00:02+00:00"
 }
