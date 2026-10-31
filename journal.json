@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "GWEI",
       "first_candle": "down",
       "h1": -3.3,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -3.5,
+      "status": "false",
       "time_utc": "2026-10-31 07:30"
     },
     {
@@ -267,11 +267,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 9,
-    "false_per_real": 0.75,
-    "known": 21,
+    "false": 10,
+    "false_per_real": 0.83,
+    "known": 22,
     "real": 12,
     "total": 22
   },
-  "updated_at": "2026-10-31T12:00:02+00:00"
+  "updated_at": "2026-10-31T13:00:02+00:00"
 }
