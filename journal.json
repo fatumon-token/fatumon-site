@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "WET",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-31 00:45"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -223,7 +235,7 @@
     "false_per_real": 0.64,
     "known": 18,
     "real": 11,
-    "total": 18
+    "total": 19
   },
-  "updated_at": "2026-10-31T00:00:02+00:00"
+  "updated_at": "2026-10-31T01:00:02+00:00"
 }
