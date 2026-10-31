@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "EVAA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-31 19:45"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
@@ -62,12 +74,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "GWEI",
       "first_candle": "up",
       "h1": -1.9,
-      "h24": null,
+      "h24": -7.7,
       "h4": -2.8,
       "status": "false",
       "time_utc": "2026-10-30 19:15"
@@ -283,7 +295,7 @@
     "false_per_real": 0.83,
     "known": 22,
     "real": 12,
-    "total": 23
+    "total": 24
   },
-  "updated_at": "2026-10-31T19:00:02+00:00"
+  "updated_at": "2026-10-31T20:00:02+00:00"
 }
