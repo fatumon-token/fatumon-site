@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "GWEI",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-10-31 07:30"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
@@ -259,7 +271,7 @@
     "false_per_real": 0.67,
     "known": 20,
     "real": 12,
-    "total": 21
+    "total": 22
   },
-  "updated_at": "2026-10-31T07:00:02+00:00"
+  "updated_at": "2026-10-31T08:00:02+00:00"
 }
