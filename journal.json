@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "ESPORTS",
       "first_candle": "up",
       "h1": 0.4,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 30.4,
+      "status": "real",
       "time_utc": "2026-11-01 13:30"
     },
     {
@@ -340,10 +340,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 12,
-    "false_per_real": 0.8,
-    "known": 27,
-    "real": 15,
+    "false_per_real": 0.75,
+    "known": 28,
+    "real": 16,
     "total": 28
   },
-  "updated_at": "2026-11-01T18:00:02+00:00"
+  "updated_at": "2026-11-01T19:00:02+00:00"
 }
