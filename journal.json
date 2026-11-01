@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "ESPORTS",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -345,5 +345,5 @@
     "real": 13,
     "total": 28
   },
-  "updated_at": "2026-11-01T14:00:02+00:00"
+  "updated_at": "2026-11-01T15:00:02+00:00"
 }
