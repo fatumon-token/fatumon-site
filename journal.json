@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "ESPORTS",
       "first_candle": "up",
-      "h1": null,
+      "h1": 0.4,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -27,13 +27,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "IDOL",
       "first_candle": "down",
       "h1": -5.2,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -7.6,
+      "status": "real",
       "time_utc": "2026-11-01 11:15"
     },
     {
@@ -340,10 +340,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 12,
-    "false_per_real": 0.92,
-    "known": 25,
-    "real": 13,
+    "false_per_real": 0.86,
+    "known": 26,
+    "real": 14,
     "total": 28
   },
-  "updated_at": "2026-11-01T15:00:02+00:00"
+  "updated_at": "2026-11-01T16:00:02+00:00"
 }
