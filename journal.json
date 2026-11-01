@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "EVAA",
       "first_candle": "down",
       "h1": -2.4,
-      "h24": null,
+      "h24": -16.3,
       "h4": -0.4,
       "status": "false",
       "time_utc": "2026-10-31 19:45"
@@ -345,5 +345,5 @@
     "real": 16,
     "total": 28
   },
-  "updated_at": "2026-11-01T20:00:01+00:00"
+  "updated_at": "2026-11-01T21:00:01+00:00"
 }
