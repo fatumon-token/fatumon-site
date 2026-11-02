@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "FIGHT",
       "first_candle": "down",
-      "h1": null,
+      "h1": -14.8,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -405,5 +405,5 @@
     "real": 18,
     "total": 33
   },
-  "updated_at": "2026-11-02T17:00:01+00:00"
+  "updated_at": "2026-11-02T18:00:01+00:00"
 }
