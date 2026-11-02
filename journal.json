@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "STAR",
-      "first_candle": null,
-      "h1": null,
+      "first_candle": "down",
+      "h1": -3.2,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -62,12 +62,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ESPORTS",
       "first_candle": "down",
       "h1": 3.1,
-      "h24": null,
+      "h24": 20.0,
       "h4": 2.1,
       "status": "real",
       "time_utc": "2026-11-01 08:15"
@@ -369,5 +369,5 @@
     "real": 16,
     "total": 30
   },
-  "updated_at": "2026-11-02T08:00:01+00:00"
+  "updated_at": "2026-11-02T09:00:02+00:00"
 }
