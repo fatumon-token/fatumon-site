@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "FIGHT",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -405,5 +405,5 @@
     "real": 18,
     "total": 33
   },
-  "updated_at": "2026-11-02T16:00:01+00:00"
+  "updated_at": "2026-11-02T17:00:01+00:00"
 }
