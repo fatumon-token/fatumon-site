@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "AGT",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-02 13:45"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
@@ -379,7 +391,7 @@
     "false_per_real": 0.76,
     "known": 30,
     "real": 17,
-    "total": 31
+    "total": 32
   },
-  "updated_at": "2026-11-02T13:00:01+00:00"
+  "updated_at": "2026-11-02T14:00:01+00:00"
 }
