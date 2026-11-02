@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "AGT",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ESPORTS",
       "first_candle": "up",
       "h1": 0.4,
-      "h24": null,
+      "h24": -0.2,
       "h4": 30.4,
       "status": "real",
       "time_utc": "2026-11-01 13:30"
@@ -393,5 +393,5 @@
     "real": 17,
     "total": 32
   },
-  "updated_at": "2026-11-02T14:00:01+00:00"
+  "updated_at": "2026-11-02T15:00:01+00:00"
 }
