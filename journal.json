@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "TRUST",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-02 03:00"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -343,7 +355,7 @@
     "false_per_real": 0.75,
     "known": 28,
     "real": 16,
-    "total": 28
+    "total": 29
   },
-  "updated_at": "2026-11-02T03:00:01+00:00"
+  "updated_at": "2026-11-02T04:00:01+00:00"
 }
