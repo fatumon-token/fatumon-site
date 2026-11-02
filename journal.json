@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "FIGHT",
       "first_candle": "down",
       "h1": -14.8,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -12.7,
+      "status": "real",
       "time_utc": "2026-11-02 15:45"
     },
     {
@@ -400,10 +400,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 13,
-    "false_per_real": 0.68,
-    "known": 32,
-    "real": 19,
+    "false_per_real": 0.65,
+    "known": 33,
+    "real": 20,
     "total": 33
   },
-  "updated_at": "2026-11-02T20:00:01+00:00"
+  "updated_at": "2026-11-02T21:00:01+00:00"
 }
