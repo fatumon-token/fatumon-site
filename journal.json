@@ -14,12 +14,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "FIGHT",
       "first_candle": "down",
       "h1": -14.8,
-      "h24": null,
+      "h24": -14.7,
       "h4": -12.7,
       "status": "real",
       "time_utc": "2026-11-02 15:45"
@@ -417,5 +417,5 @@
     "real": 20,
     "total": 34
   },
-  "updated_at": "2026-11-03T16:00:01+00:00"
+  "updated_at": "2026-11-03T17:00:01+00:00"
 }
