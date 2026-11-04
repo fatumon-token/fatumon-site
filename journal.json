@@ -1,27 +1,39 @@
 {
   "signals": [
     {
-      "burst_1h": true,
+      "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "CLANKER",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-04 17:30"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": true,
       "coin": "CAP",
       "first_candle": "up",
       "h1": 5.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 11.2,
+      "status": "real",
       "time_utc": "2026-11-04 12:45"
     },
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "JCT",
       "first_candle": "down",
       "h1": -4.3,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -5.0,
+      "status": "real",
       "time_utc": "2026-11-04 12:30"
     },
     {
@@ -448,10 +460,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 14,
-    "false_per_real": 0.67,
-    "known": 35,
-    "real": 21,
-    "total": 37
+    "false_per_real": 0.61,
+    "known": 37,
+    "real": 23,
+    "total": 38
   },
-  "updated_at": "2026-11-04T17:00:01+00:00"
+  "updated_at": "2026-11-04T18:00:01+00:00"
 }
