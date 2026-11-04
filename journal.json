@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-04 22:15"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
@@ -15,25 +27,25 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": 1.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 36.6,
+      "status": "real",
       "time_utc": "2026-11-04 18:00"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "CLANKER",
       "first_candle": "down",
       "h1": 5.8,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 25.9,
+      "status": "real",
       "time_utc": "2026-11-04 17:30"
     },
     {
@@ -484,10 +496,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 14,
-    "false_per_real": 0.61,
-    "known": 37,
-    "real": 23,
-    "total": 40
+    "false_per_real": 0.56,
+    "known": 39,
+    "real": 25,
+    "total": 41
   },
-  "updated_at": "2026-11-04T22:00:01+00:00"
+  "updated_at": "2026-11-04T23:00:01+00:00"
 }
