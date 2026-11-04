@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "CAP",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -17,7 +17,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "JCT",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -453,5 +453,5 @@
     "real": 21,
     "total": 37
   },
-  "updated_at": "2026-11-04T13:00:01+00:00"
+  "updated_at": "2026-11-04T14:00:01+00:00"
 }
