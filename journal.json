@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "CLANKER",
       "first_candle": "down",
       "h1": -2.8,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -4.8,
+      "status": "false",
       "time_utc": "2026-11-04 03:00"
     },
     {
@@ -423,11 +423,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 13,
-    "false_per_real": 0.62,
-    "known": 34,
+    "false": 14,
+    "false_per_real": 0.67,
+    "known": 35,
     "real": 21,
     "total": 35
   },
-  "updated_at": "2026-11-04T07:00:01+00:00"
+  "updated_at": "2026-11-04T08:00:01+00:00"
 }
