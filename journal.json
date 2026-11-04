@@ -4,8 +4,20 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-04 18:00"
+    },
+    {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "CLANKER",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -463,7 +475,7 @@
     "false_per_real": 0.61,
     "known": 37,
     "real": 23,
-    "total": 38
+    "total": 39
   },
-  "updated_at": "2026-11-04T18:00:01+00:00"
+  "updated_at": "2026-11-04T19:00:01+00:00"
 }
