@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": -5.4,
-      "h24": null,
+      "h24": -23.1,
       "h4": -14.4,
       "status": "real",
       "time_utc": "2026-11-04 22:15"
@@ -549,5 +549,5 @@
     "real": 27,
     "total": 45
   },
-  "updated_at": "2026-11-05T22:00:02+00:00"
+  "updated_at": "2026-11-05T23:00:02+00:00"
 }
