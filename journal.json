@@ -86,12 +86,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "CLANKER",
       "first_candle": "down",
       "h1": -2.8,
-      "h24": null,
+      "h24": 3.2,
       "h4": -4.8,
       "status": "false",
       "time_utc": "2026-11-04 03:00"
@@ -513,5 +513,5 @@
     "real": 26,
     "total": 42
   },
-  "updated_at": "2026-11-05T03:00:01+00:00"
+  "updated_at": "2026-11-05T04:00:01+00:00"
 }
