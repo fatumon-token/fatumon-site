@@ -74,24 +74,24 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": 1.9,
-      "h24": null,
+      "h24": 2.4,
       "h4": 36.6,
       "status": "real",
       "time_utc": "2026-11-04 18:00"
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "CLANKER",
       "first_candle": "down",
       "h1": 5.8,
-      "h24": null,
+      "h24": -19.3,
       "h4": 25.9,
       "status": "real",
       "time_utc": "2026-11-04 17:30"
@@ -549,5 +549,5 @@
     "real": 27,
     "total": 45
   },
-  "updated_at": "2026-11-05T18:00:02+00:00"
+  "updated_at": "2026-11-05T19:00:02+00:00"
 }
