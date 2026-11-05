@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-05 08:45"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "THE",
       "first_candle": "down",
-      "h1": null,
+      "h1": 0.5,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -15,13 +27,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": -6.2,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -6.3,
+      "status": "false",
       "time_utc": "2026-11-05 04:15"
     },
     {
@@ -531,11 +543,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 16,
-    "false_per_real": 0.62,
-    "known": 42,
+    "false": 17,
+    "false_per_real": 0.65,
+    "known": 43,
     "real": 26,
-    "total": 44
+    "total": 45
   },
-  "updated_at": "2026-11-05T08:00:01+00:00"
+  "updated_at": "2026-11-05T09:00:01+00:00"
 }
