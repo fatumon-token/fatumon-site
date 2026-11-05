@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-05 04:15"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
@@ -511,7 +523,7 @@
     "false_per_real": 0.58,
     "known": 41,
     "real": 26,
-    "total": 42
+    "total": 43
   },
-  "updated_at": "2026-11-05T04:00:01+00:00"
+  "updated_at": "2026-11-05T05:00:01+00:00"
 }
