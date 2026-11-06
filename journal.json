@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "UAI",
       "first_candle": "up",
-      "h1": null,
+      "h1": -18.7,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -561,5 +561,5 @@
     "real": 27,
     "total": 46
   },
-  "updated_at": "2026-11-06T14:00:02+00:00"
+  "updated_at": "2026-11-06T15:00:02+00:00"
 }
