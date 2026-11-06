@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "FLUID",
       "first_candle": "down",
       "h1": -1.0,
-      "h24": null,
+      "h24": -6.8,
       "h4": 3.2,
       "status": "false",
       "time_utc": "2026-11-05 01:00"
@@ -549,5 +549,5 @@
     "real": 27,
     "total": 45
   },
-  "updated_at": "2026-11-06T01:00:02+00:00"
+  "updated_at": "2026-11-06T02:00:02+00:00"
 }
