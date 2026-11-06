@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "UAI",
       "first_candle": "up",
       "h1": 17.3,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -30.9,
+      "status": "real",
       "time_utc": "2026-11-06 17:00"
     },
     {
@@ -568,10 +568,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 18,
-    "false_per_real": 0.64,
-    "known": 46,
-    "real": 28,
+    "false_per_real": 0.62,
+    "known": 47,
+    "real": 29,
     "total": 47
   },
-  "updated_at": "2026-11-06T21:00:02+00:00"
+  "updated_at": "2026-11-06T22:00:02+00:00"
 }
