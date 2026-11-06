@@ -2,12 +2,12 @@
   "signals": [
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ELSA",
       "first_candle": "up",
       "h1": -9.8,
-      "h24": null,
+      "h24": -26.3,
       "h4": -19.6,
       "status": "real",
       "time_utc": "2026-11-05 08:45"
@@ -549,5 +549,5 @@
     "real": 27,
     "total": 45
   },
-  "updated_at": "2026-11-06T09:00:02+00:00"
+  "updated_at": "2026-11-06T10:00:02+00:00"
 }
