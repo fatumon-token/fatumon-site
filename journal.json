@@ -1,24 +1,24 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "AIOT",
-      "first_candle": null,
-      "h1": null,
+      "first_candle": "down",
+      "h1": -0.1,
       "h24": null,
       "h4": null,
       "status": "pending",
       "time_utc": "2026-11-07 12:15"
     },
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "IDOL",
       "first_candle": "down",
-      "h1": null,
+      "h1": -1.4,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -62,12 +62,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "UAI",
       "first_candle": "up",
       "h1": -18.7,
-      "h24": null,
+      "h24": -42.9,
       "h4": -6.6,
       "status": "real",
       "time_utc": "2026-11-06 13:00"
@@ -621,5 +621,5 @@
     "real": 31,
     "total": 51
   },
-  "updated_at": "2026-11-07T13:00:01+00:00"
+  "updated_at": "2026-11-07T14:00:01+00:00"
 }
