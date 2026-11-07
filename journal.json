@@ -1,27 +1,39 @@
 {
   "signals": [
     {
-      "burst_1h": false,
+      "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "STAR",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-07 16:30"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": false,
       "coin": "AIOT",
       "first_candle": "down",
       "h1": -0.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 1.6,
+      "status": "false",
       "time_utc": "2026-11-07 12:15"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "IDOL",
       "first_candle": "down",
       "h1": -1.4,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 16.4,
+      "status": "real",
       "time_utc": "2026-11-07 12:00"
     },
     {
@@ -615,11 +627,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 18,
-    "false_per_real": 0.58,
-    "known": 49,
-    "real": 31,
-    "total": 51
+    "false": 19,
+    "false_per_real": 0.59,
+    "known": 51,
+    "real": 32,
+    "total": 52
   },
-  "updated_at": "2026-11-07T16:00:01+00:00"
+  "updated_at": "2026-11-07T17:00:01+00:00"
 }
