@@ -4,21 +4,45 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
-      "coin": "TA",
+      "coin": "AIOT",
       "first_candle": null,
       "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-08 15:30"
+    },
+    {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ON",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-08 15:30"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "TA",
+      "first_candle": "down",
+      "h1": -5.7,
       "h24": null,
       "h4": null,
       "status": "pending",
       "time_utc": "2026-11-08 14:15"
     },
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "HANA",
       "first_candle": "down",
-      "h1": null,
+      "h1": 0.6,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -715,7 +739,7 @@
     "false_per_real": 0.63,
     "known": 57,
     "real": 35,
-    "total": 59
+    "total": 61
   },
-  "updated_at": "2026-11-08T15:00:01+00:00"
+  "updated_at": "2026-11-08T16:00:01+00:00"
 }
