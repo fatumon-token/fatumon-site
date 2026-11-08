@@ -74,24 +74,24 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "AIOT",
       "first_candle": "down",
       "h1": -0.1,
-      "h24": null,
+      "h24": 17.4,
       "h4": 1.6,
       "status": "false",
       "time_utc": "2026-11-07 12:15"
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "IDOL",
       "first_candle": "down",
       "h1": -1.4,
-      "h24": null,
+      "h24": 9.6,
       "h4": 16.4,
       "status": "real",
       "time_utc": "2026-11-07 12:00"
@@ -693,5 +693,5 @@
     "real": 34,
     "total": 57
   },
-  "updated_at": "2026-11-08T12:00:01+00:00"
+  "updated_at": "2026-11-08T13:00:01+00:00"
 }
