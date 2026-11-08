@@ -3,37 +3,37 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "AIO",
       "first_candle": "up",
       "h1": 2.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 8.6,
+      "status": "false",
       "time_utc": "2026-11-08 16:15"
     },
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "AIOT",
       "first_candle": "up",
       "h1": 17.8,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 10.5,
+      "status": "real",
       "time_utc": "2026-11-08 15:30"
     },
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "ON",
       "first_candle": "down",
       "h1": -7.7,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -6.3,
+      "status": "real",
       "time_utc": "2026-11-08 15:30"
     },
     {
@@ -747,11 +747,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 23,
-    "false_per_real": 0.64,
-    "known": 59,
-    "real": 36,
+    "false": 24,
+    "false_per_real": 0.63,
+    "known": 62,
+    "real": 38,
     "total": 62
   },
-  "updated_at": "2026-11-08T20:00:01+00:00"
+  "updated_at": "2026-11-08T21:00:01+00:00"
 }
