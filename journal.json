@@ -39,25 +39,25 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "TA",
       "first_candle": "down",
       "h1": -5.7,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -7.5,
+      "status": "real",
       "time_utc": "2026-11-08 14:15"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "HANA",
       "first_candle": "down",
       "h1": 0.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -2.2,
+      "status": "false",
       "time_utc": "2026-11-08 13:30"
     },
     {
@@ -747,11 +747,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 22,
-    "false_per_real": 0.63,
-    "known": 57,
-    "real": 35,
+    "false": 23,
+    "false_per_real": 0.64,
+    "known": 59,
+    "real": 36,
     "total": 62
   },
-  "updated_at": "2026-11-08T18:00:01+00:00"
+  "updated_at": "2026-11-08T19:00:01+00:00"
 }
