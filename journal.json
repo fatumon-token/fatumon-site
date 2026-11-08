@@ -1,24 +1,24 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "AIOT",
-      "first_candle": null,
-      "h1": null,
+      "first_candle": "down",
+      "h1": -3.2,
       "h24": null,
       "h4": null,
       "status": "pending",
       "time_utc": "2026-11-08 01:15"
     },
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "SWARMS",
       "first_candle": "down",
-      "h1": null,
+      "h1": -4.0,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -657,5 +657,5 @@
     "real": 33,
     "total": 54
   },
-  "updated_at": "2026-11-08T02:00:01+00:00"
+  "updated_at": "2026-11-08T03:00:01+00:00"
 }
