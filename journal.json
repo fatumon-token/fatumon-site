@@ -86,12 +86,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "ESPORTS",
       "first_candle": "down",
       "h1": -0.2,
-      "h24": null,
+      "h24": -12.5,
       "h4": -15.5,
       "status": "real",
       "time_utc": "2026-11-07 06:15"
@@ -669,5 +669,5 @@
     "real": 33,
     "total": 55
   },
-  "updated_at": "2026-11-08T06:00:01+00:00"
+  "updated_at": "2026-11-08T07:00:01+00:00"
 }
