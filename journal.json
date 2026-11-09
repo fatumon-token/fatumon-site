@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
-      "coin": "ON",
+      "coin": "DOS",
       "first_candle": null,
       "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-09 09:30"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ON",
+      "first_candle": "down",
+      "h1": 4.7,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -775,7 +787,7 @@
     "false_per_real": 0.62,
     "known": 63,
     "real": 39,
-    "total": 64
+    "total": 65
   },
-  "updated_at": "2026-11-09T09:00:01+00:00"
+  "updated_at": "2026-11-09T10:00:01+00:00"
 }
