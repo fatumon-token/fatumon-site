@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
-      "coin": "PIEVERSE",
+      "coin": "SQD",
       "first_candle": null,
       "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-09 17:15"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "PIEVERSE",
+      "first_candle": "up",
+      "h1": 1.6,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -799,7 +811,7 @@
     "false_per_real": 0.62,
     "known": 65,
     "real": 40,
-    "total": 66
+    "total": 67
   },
-  "updated_at": "2026-11-09T17:00:01+00:00"
+  "updated_at": "2026-11-09T18:00:01+00:00"
 }
