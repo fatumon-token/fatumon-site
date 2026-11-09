@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "HANA",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -98,12 +98,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "KOMA",
       "first_candle": "up",
       "h1": 1.0,
-      "h24": null,
+      "h24": -28.1,
       "h4": 5.5,
       "status": "real",
       "time_utc": "2026-11-08 04:00"
@@ -765,5 +765,5 @@
     "real": 38,
     "total": 63
   },
-  "updated_at": "2026-11-09T04:00:01+00:00"
+  "updated_at": "2026-11-09T05:00:01+00:00"
 }
