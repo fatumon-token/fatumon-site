@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "DOS",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -98,12 +98,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "JCT",
       "first_candle": "up",
       "h1": 24.8,
-      "h24": null,
+      "h24": 119.9,
       "h4": 161.6,
       "status": "real",
       "time_utc": "2026-11-08 09:45"
@@ -789,5 +789,5 @@
     "real": 39,
     "total": 65
   },
-  "updated_at": "2026-11-09T10:00:01+00:00"
+  "updated_at": "2026-11-09T11:00:01+00:00"
 }
