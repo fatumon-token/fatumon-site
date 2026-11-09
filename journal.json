@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "HANA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-09 03:45"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -751,7 +763,7 @@
     "false_per_real": 0.63,
     "known": 62,
     "real": 38,
-    "total": 62
+    "total": 63
   },
-  "updated_at": "2026-11-09T03:00:01+00:00"
+  "updated_at": "2026-11-09T04:00:01+00:00"
 }
