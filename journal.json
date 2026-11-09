@@ -86,12 +86,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "SWARMS",
       "first_candle": "up",
       "h1": -1.1,
-      "h24": null,
+      "h24": -17.5,
       "h4": -7.0,
       "status": "false",
       "time_utc": "2026-11-08 07:00"
@@ -765,5 +765,5 @@
     "real": 38,
     "total": 63
   },
-  "updated_at": "2026-11-09T07:00:01+00:00"
+  "updated_at": "2026-11-09T08:00:01+00:00"
 }
