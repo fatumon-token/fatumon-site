@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "JCT",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-10 15:30"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -823,7 +835,7 @@
     "false_per_real": 0.66,
     "known": 68,
     "real": 41,
-    "total": 68
+    "total": 69
   },
-  "updated_at": "2026-11-10T15:00:01+00:00"
+  "updated_at": "2026-11-10T16:00:01+00:00"
 }
