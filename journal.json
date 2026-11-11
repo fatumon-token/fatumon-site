@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "AGT",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-11 08:15"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
@@ -15,13 +27,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "哈基米",
       "first_candle": "down",
       "h1": -5.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -13.1,
+      "status": "false",
       "time_utc": "2026-11-11 04:00"
     },
     {
@@ -855,11 +867,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 27,
-    "false_per_real": 0.64,
-    "known": 69,
+    "false": 28,
+    "false_per_real": 0.67,
+    "known": 70,
     "real": 42,
-    "total": 71
+    "total": 72
   },
-  "updated_at": "2026-11-11T08:00:02+00:00"
+  "updated_at": "2026-11-11T09:00:02+00:00"
 }
