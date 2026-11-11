@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "XVG",
       "first_candle": "down",
       "h1": -1.8,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -2.6,
+      "status": "false",
       "time_utc": "2026-11-11 17:45"
     },
     {
@@ -891,11 +891,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 28,
-    "false_per_real": 0.62,
-    "known": 73,
+    "false": 29,
+    "false_per_real": 0.64,
+    "known": 74,
     "real": 45,
     "total": 74
   },
-  "updated_at": "2026-11-11T22:00:01+00:00"
+  "updated_at": "2026-11-11T23:00:02+00:00"
 }
