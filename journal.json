@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "哈基米",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-11 04:00"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -835,7 +847,7 @@
     "false_per_real": 0.64,
     "known": 69,
     "real": 42,
-    "total": 69
+    "total": 70
   },
-  "updated_at": "2026-11-11T04:00:02+00:00"
+  "updated_at": "2026-11-11T05:00:02+00:00"
 }
