@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "AGT",
-      "first_candle": null,
-      "h1": null,
+      "first_candle": "up",
+      "h1": 65.0,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -873,5 +873,5 @@
     "real": 42,
     "total": 72
   },
-  "updated_at": "2026-11-11T09:00:02+00:00"
+  "updated_at": "2026-11-11T10:00:02+00:00"
 }
