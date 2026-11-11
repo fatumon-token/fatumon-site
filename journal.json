@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "XVG",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -897,5 +897,5 @@
     "real": 44,
     "total": 74
   },
-  "updated_at": "2026-11-11T18:00:02+00:00"
+  "updated_at": "2026-11-11T19:00:02+00:00"
 }
