@@ -15,13 +15,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "BLUAI",
       "first_candle": "up",
       "h1": -9.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -9.5,
+      "status": "real",
       "time_utc": "2026-11-11 05:45"
     },
     {
@@ -868,10 +868,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 28,
-    "false_per_real": 0.67,
-    "known": 70,
-    "real": 42,
+    "false_per_real": 0.65,
+    "known": 71,
+    "real": 43,
     "total": 72
   },
-  "updated_at": "2026-11-11T10:00:02+00:00"
+  "updated_at": "2026-11-11T11:00:02+00:00"
 }
