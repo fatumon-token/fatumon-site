@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "BLUAI",
       "first_candle": "up",
-      "h1": null,
+      "h1": -9.6,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "PLAY",
       "first_candle": "up",
       "h1": 12.8,
-      "h24": null,
+      "h24": -13.6,
       "h4": 3.6,
       "status": "real",
       "time_utc": "2026-11-10 06:30"
@@ -861,5 +861,5 @@
     "real": 42,
     "total": 71
   },
-  "updated_at": "2026-11-11T07:00:02+00:00"
+  "updated_at": "2026-11-11T08:00:02+00:00"
 }
