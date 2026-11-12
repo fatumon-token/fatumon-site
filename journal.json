@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "PLAY",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -13,12 +13,12 @@
       "time_utc": "2026-11-12 16:30"
     },
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "DODOX",
       "first_candle": "up",
-      "h1": null,
+      "h1": 6.2,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -933,5 +933,5 @@
     "real": 46,
     "total": 77
   },
-  "updated_at": "2026-11-12T17:00:02+00:00"
+  "updated_at": "2026-11-12T18:00:02+00:00"
 }
