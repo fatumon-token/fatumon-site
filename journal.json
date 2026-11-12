@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "AGT",
       "first_candle": "up",
       "h1": 65.0,
-      "h24": null,
+      "h24": 128.1,
       "h4": 95.8,
       "status": "real",
       "time_utc": "2026-11-11 08:15"
@@ -897,5 +897,5 @@
     "real": 45,
     "total": 74
   },
-  "updated_at": "2026-11-12T08:00:02+00:00"
+  "updated_at": "2026-11-12T09:00:02+00:00"
 }
