@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "PLAY",
       "first_candle": "down",
-      "h1": null,
+      "h1": -4.0,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "XVG",
       "first_candle": "down",
       "h1": -1.8,
-      "h24": null,
+      "h24": -5.3,
       "h4": -2.6,
       "status": "false",
       "time_utc": "2026-11-11 17:45"
@@ -933,5 +933,5 @@
     "real": 46,
     "total": 77
   },
-  "updated_at": "2026-11-12T18:00:02+00:00"
+  "updated_at": "2026-11-12T19:00:02+00:00"
 }
