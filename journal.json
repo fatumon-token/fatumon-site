@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "JCT",
       "first_candle": "down",
       "h1": 2.3,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -13.6,
+      "status": "real",
       "time_utc": "2026-11-12 09:15"
     },
     {
@@ -904,10 +904,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 29,
-    "false_per_real": 0.64,
-    "known": 74,
-    "real": 45,
+    "false_per_real": 0.63,
+    "known": 75,
+    "real": 46,
     "total": 75
   },
-  "updated_at": "2026-11-12T13:00:02+00:00"
+  "updated_at": "2026-11-12T14:00:02+00:00"
 }
