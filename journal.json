@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "PLAY",
       "first_candle": "up",
       "h1": -1.3,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 3.6,
+      "status": "real",
       "time_utc": "2026-11-12 20:30"
     },
     {
@@ -940,10 +940,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 30,
-    "false_per_real": 0.64,
-    "known": 77,
-    "real": 47,
+    "false_per_real": 0.62,
+    "known": 78,
+    "real": 48,
     "total": 78
   },
-  "updated_at": "2026-11-13T01:00:02+00:00"
+  "updated_at": "2026-11-13T02:00:02+00:00"
 }
