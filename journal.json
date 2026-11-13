@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "DODOX",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-13 09:30"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
@@ -62,12 +74,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "JCT",
       "first_candle": "down",
       "h1": 2.3,
-      "h24": null,
+      "h24": -37.9,
       "h4": -13.6,
       "status": "real",
       "time_utc": "2026-11-12 09:15"
@@ -967,7 +979,7 @@
     "false_per_real": 0.62,
     "known": 78,
     "real": 48,
-    "total": 80
+    "total": 81
   },
-  "updated_at": "2026-11-13T09:00:02+00:00"
+  "updated_at": "2026-11-13T10:00:02+00:00"
 }
