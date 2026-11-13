@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "AKE",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-13 11:00"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "DODOX",
       "first_candle": "up",
-      "h1": null,
+      "h1": 0.1,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -15,25 +27,25 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "XVG",
       "first_candle": "up",
       "h1": 0.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 0.3,
+      "status": "false",
       "time_utc": "2026-11-13 07:15"
     },
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "AKE",
       "first_candle": "up",
       "h1": -2.7,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 40.2,
+      "status": "real",
       "time_utc": "2026-11-13 07:00"
     },
     {
@@ -975,11 +987,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 30,
-    "false_per_real": 0.62,
-    "known": 78,
-    "real": 48,
-    "total": 81
+    "false": 31,
+    "false_per_real": 0.63,
+    "known": 80,
+    "real": 49,
+    "total": 82
   },
-  "updated_at": "2026-11-13T11:00:02+00:00"
+  "updated_at": "2026-11-13T12:00:02+00:00"
 }
