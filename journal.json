@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "TAC",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -15,13 +15,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "AKE",
       "first_candle": "down",
       "h1": -6.0,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 5.7,
+      "status": "real",
       "time_utc": "2026-11-13 11:00"
     },
     {
@@ -1000,10 +1000,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 32,
-    "false_per_real": 0.65,
-    "known": 81,
-    "real": 49,
+    "false_per_real": 0.64,
+    "known": 82,
+    "real": 50,
     "total": 83
   },
-  "updated_at": "2026-11-13T15:00:02+00:00"
+  "updated_at": "2026-11-13T16:00:02+00:00"
 }
