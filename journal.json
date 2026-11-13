@@ -1,6 +1,30 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "XVG",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-13 07:15"
+    },
+    {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "AKE",
+      "first_candle": "up",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-13 07:00"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": true,
@@ -943,7 +967,7 @@
     "false_per_real": 0.62,
     "known": 78,
     "real": 48,
-    "total": 78
+    "total": 80
   },
-  "updated_at": "2026-11-13T07:00:02+00:00"
+  "updated_at": "2026-11-13T08:00:02+00:00"
 }
