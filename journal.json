@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "TAC",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-13 14:45"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
@@ -15,13 +27,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "DODOX",
       "first_candle": "up",
       "h1": 0.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -1.1,
+      "status": "false",
       "time_utc": "2026-11-13 09:30"
     },
     {
@@ -987,11 +999,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 31,
-    "false_per_real": 0.63,
-    "known": 80,
+    "false": 32,
+    "false_per_real": 0.65,
+    "known": 81,
     "real": 49,
-    "total": 82
+    "total": 83
   },
-  "updated_at": "2026-11-13T14:00:02+00:00"
+  "updated_at": "2026-11-13T15:00:02+00:00"
 }
