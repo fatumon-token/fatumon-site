@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "EVAA",
       "first_candle": "down",
       "h1": -5.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -14.2,
+      "status": "real",
       "time_utc": "2026-11-14 15:00"
     },
     {
@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "AKE",
       "first_candle": "up",
       "h1": 5.9,
-      "h24": null,
+      "h24": 3.5,
       "h4": 6.6,
       "status": "real",
       "time_utc": "2026-11-13 19:00"
@@ -1060,10 +1060,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 33,
-    "false_per_real": 0.61,
-    "known": 87,
-    "real": 54,
+    "false_per_real": 0.6,
+    "known": 88,
+    "real": 55,
     "total": 88
   },
-  "updated_at": "2026-11-14T19:00:01+00:00"
+  "updated_at": "2026-11-14T20:00:01+00:00"
 }
