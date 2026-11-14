@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "AKE",
       "first_candle": "down",
       "h1": -6.0,
-      "h24": null,
+      "h24": 104.6,
       "h4": 5.7,
       "status": "real",
       "time_utc": "2026-11-13 11:00"
@@ -1029,5 +1029,5 @@
     "real": 53,
     "total": 85
   },
-  "updated_at": "2026-11-14T11:00:01+00:00"
+  "updated_at": "2026-11-14T12:00:01+00:00"
 }
