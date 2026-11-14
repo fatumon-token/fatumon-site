@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "BULLA",
       "first_candle": "down",
       "h1": 5.2,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 2.9,
+      "status": "real",
       "time_utc": "2026-11-14 04:00"
     },
     {
@@ -1024,10 +1024,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 32,
-    "false_per_real": 0.62,
-    "known": 84,
-    "real": 52,
+    "false_per_real": 0.6,
+    "known": 85,
+    "real": 53,
     "total": 85
   },
-  "updated_at": "2026-11-14T08:00:01+00:00"
+  "updated_at": "2026-11-14T09:00:01+00:00"
 }
