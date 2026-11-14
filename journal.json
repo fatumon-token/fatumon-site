@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "DODOX",
       "first_candle": "up",
       "h1": 0.1,
-      "h24": null,
+      "h24": 6.7,
       "h4": -1.1,
       "status": "false",
       "time_utc": "2026-11-13 09:30"
@@ -1029,5 +1029,5 @@
     "real": 53,
     "total": 85
   },
-  "updated_at": "2026-11-14T10:00:01+00:00"
+  "updated_at": "2026-11-14T11:00:01+00:00"
 }
