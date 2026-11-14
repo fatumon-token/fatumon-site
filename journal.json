@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "AKE",
       "first_candle": "up",
       "h1": 5.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 6.6,
+      "status": "real",
       "time_utc": "2026-11-13 19:00"
     },
     {
@@ -1012,10 +1012,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 32,
-    "false_per_real": 0.63,
-    "known": 83,
-    "real": 51,
+    "false_per_real": 0.62,
+    "known": 84,
+    "real": 52,
     "total": 84
   },
-  "updated_at": "2026-11-13T23:00:01+00:00"
+  "updated_at": "2026-11-14T00:00:01+00:00"
 }
