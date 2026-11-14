@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
-      "coin": "CAP",
+      "coin": "EVAA",
       "first_candle": "down",
       "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-14 15:00"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "CAP",
+      "first_candle": "down",
+      "h1": -8.0,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -50,12 +62,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "TAC",
       "first_candle": "up",
       "h1": 8.3,
-      "h24": null,
+      "h24": -4.6,
       "h4": 12.9,
       "status": "real",
       "time_utc": "2026-11-13 14:45"
@@ -1051,7 +1063,7 @@
     "false_per_real": 0.6,
     "known": 85,
     "real": 53,
-    "total": 87
+    "total": 88
   },
-  "updated_at": "2026-11-14T15:00:01+00:00"
+  "updated_at": "2026-11-14T16:00:01+00:00"
 }
