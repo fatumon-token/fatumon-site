@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "BULLA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-15 04:30"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -38,12 +50,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "BULLA",
       "first_candle": "down",
       "h1": 5.2,
-      "h24": null,
+      "h24": 2.2,
       "h4": 2.9,
       "status": "real",
       "time_utc": "2026-11-14 04:00"
@@ -1063,7 +1075,7 @@
     "false_per_real": 0.6,
     "known": 88,
     "real": 55,
-    "total": 88
+    "total": 89
   },
-  "updated_at": "2026-11-15T04:00:01+00:00"
+  "updated_at": "2026-11-15T05:00:01+00:00"
 }
