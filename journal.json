@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "BULLA",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -1077,5 +1077,5 @@
     "real": 55,
     "total": 89
   },
-  "updated_at": "2026-11-15T05:00:01+00:00"
+  "updated_at": "2026-11-15T06:00:01+00:00"
 }
