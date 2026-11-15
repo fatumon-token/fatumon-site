@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "TAC",
       "first_candle": "down",
-      "h1": null,
+      "h1": -7.1,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -50,12 +50,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "CAP",
       "first_candle": "down",
       "h1": -8.0,
-      "h24": null,
+      "h24": -9.6,
       "h4": -8.0,
       "status": "real",
       "time_utc": "2026-11-14 14:00"
@@ -1101,5 +1101,5 @@
     "real": 55,
     "total": 91
   },
-  "updated_at": "2026-11-15T14:00:01+00:00"
+  "updated_at": "2026-11-15T15:00:01+00:00"
 }
