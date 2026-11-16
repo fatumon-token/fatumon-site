@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "TAC",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -1125,5 +1125,5 @@
     "real": 57,
     "total": 93
   },
-  "updated_at": "2026-11-16T04:00:01+00:00"
+  "updated_at": "2026-11-16T05:00:01+00:00"
 }
