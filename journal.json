@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "BLESS",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-16 17:30"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
@@ -1135,7 +1147,7 @@
     "false_per_real": 0.58,
     "known": 93,
     "real": 59,
-    "total": 94
+    "total": 95
   },
-  "updated_at": "2026-11-16T17:00:01+00:00"
+  "updated_at": "2026-11-16T18:00:01+00:00"
 }
