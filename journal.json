@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "TAC",
       "first_candle": "down",
       "h1": -16.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -19.6,
+      "status": "real",
       "time_utc": "2026-11-16 03:30"
     },
     {
@@ -1120,10 +1120,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 34,
-    "false_per_real": 0.59,
-    "known": 92,
-    "real": 58,
+    "false_per_real": 0.58,
+    "known": 93,
+    "real": 59,
     "total": 93
   },
-  "updated_at": "2026-11-16T08:00:01+00:00"
+  "updated_at": "2026-11-16T09:00:01+00:00"
 }
