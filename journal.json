@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "BLESS",
       "first_candle": "down",
       "h1": 0.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -1.7,
+      "status": "real",
       "time_utc": "2026-11-16 17:30"
     },
     {
@@ -1144,10 +1144,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 34,
-    "false_per_real": 0.57,
-    "known": 94,
-    "real": 60,
+    "false_per_real": 0.56,
+    "known": 95,
+    "real": 61,
     "total": 95
   },
-  "updated_at": "2026-11-16T22:00:01+00:00"
+  "updated_at": "2026-11-16T23:00:01+00:00"
 }
