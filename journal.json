@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "BLESS",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-16 13:30"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -26,12 +38,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "TAC",
       "first_candle": "down",
       "h1": -7.1,
-      "h24": null,
+      "h24": 6.1,
       "h4": -7.5,
       "status": "real",
       "time_utc": "2026-11-15 13:00"
@@ -1123,7 +1135,7 @@
     "false_per_real": 0.58,
     "known": 93,
     "real": 59,
-    "total": 93
+    "total": 94
   },
-  "updated_at": "2026-11-16T13:00:01+00:00"
+  "updated_at": "2026-11-16T14:00:01+00:00"
 }
