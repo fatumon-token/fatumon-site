@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "PHAROS",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -1185,5 +1185,5 @@
     "real": 61,
     "total": 98
   },
-  "updated_at": "2026-11-17T13:00:02+00:00"
+  "updated_at": "2026-11-17T14:00:02+00:00"
 }
