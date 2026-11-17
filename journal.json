@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "PHAROS",
       "first_candle": "down",
       "h1": -1.0,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 4.9,
+      "status": "real",
       "time_utc": "2026-11-17 12:45"
     },
     {
@@ -1180,10 +1180,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 36,
-    "false_per_real": 0.59,
-    "known": 97,
-    "real": 61,
+    "false_per_real": 0.58,
+    "known": 98,
+    "real": 62,
     "total": 98
   },
-  "updated_at": "2026-11-17T17:00:02+00:00"
+  "updated_at": "2026-11-17T18:00:02+00:00"
 }
