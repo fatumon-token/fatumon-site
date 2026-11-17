@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "TAC",
       "first_candle": "down",
       "h1": -16.9,
-      "h24": null,
+      "h24": -24.6,
       "h4": -19.6,
       "status": "real",
       "time_utc": "2026-11-16 03:30"
@@ -1149,5 +1149,5 @@
     "real": 61,
     "total": 95
   },
-  "updated_at": "2026-11-17T04:00:01+00:00"
+  "updated_at": "2026-11-17T05:00:01+00:00"
 }
