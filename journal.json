@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "我踏马来了",
       "first_candle": "up",
-      "h1": null,
+      "h1": -3.6,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -1161,5 +1161,5 @@
     "real": 61,
     "total": 96
   },
-  "updated_at": "2026-11-17T08:00:02+00:00"
+  "updated_at": "2026-11-17T09:00:02+00:00"
 }
