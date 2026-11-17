@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "我踏马来了",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -1161,5 +1161,5 @@
     "real": 61,
     "total": 96
   },
-  "updated_at": "2026-11-17T07:00:02+00:00"
+  "updated_at": "2026-11-17T08:00:02+00:00"
 }
