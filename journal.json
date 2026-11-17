@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "BLESS",
       "first_candle": "down",
       "h1": 0.6,
-      "h24": null,
+      "h24": -47.5,
       "h4": -1.7,
       "status": "real",
       "time_utc": "2026-11-16 17:30"
@@ -1185,5 +1185,5 @@
     "real": 62,
     "total": 98
   },
-  "updated_at": "2026-11-17T18:00:02+00:00"
+  "updated_at": "2026-11-17T19:00:02+00:00"
 }
