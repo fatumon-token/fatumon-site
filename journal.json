@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "我踏马来了",
       "first_candle": "up",
       "h1": -3.6,
-      "h24": null,
+      "h24": -7.9,
       "h4": -8.2,
       "status": "false",
       "time_utc": "2026-11-17 06:45"
@@ -1185,5 +1185,5 @@
     "real": 62,
     "total": 98
   },
-  "updated_at": "2026-11-18T07:00:02+00:00"
+  "updated_at": "2026-11-18T08:00:02+00:00"
 }
