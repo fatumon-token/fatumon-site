@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "SPORTFUN",
       "first_candle": "down",
       "h1": -3.1,
-      "h24": null,
+      "h24": -2.2,
       "h4": -5.2,
       "status": "false",
       "time_utc": "2026-11-17 09:45"
@@ -1197,5 +1197,5 @@
     "real": 62,
     "total": 99
   },
-  "updated_at": "2026-11-18T10:00:02+00:00"
+  "updated_at": "2026-11-18T11:00:02+00:00"
 }
