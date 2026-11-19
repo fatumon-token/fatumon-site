@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "BTR",
       "first_candle": "down",
       "h1": -8.4,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -5.0,
+      "status": "false",
       "time_utc": "2026-11-19 05:15"
     },
     {
@@ -1203,11 +1203,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 36,
-    "false_per_real": 0.57,
-    "known": 99,
+    "false": 37,
+    "false_per_real": 0.59,
+    "known": 100,
     "real": 63,
     "total": 100
   },
-  "updated_at": "2026-11-19T09:00:02+00:00"
+  "updated_at": "2026-11-19T10:00:02+00:00"
 }
