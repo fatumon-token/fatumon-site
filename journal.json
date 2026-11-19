@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "BTR",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-19 05:15"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -1195,7 +1207,7 @@
     "false_per_real": 0.57,
     "known": 99,
     "real": 63,
-    "total": 99
+    "total": 100
   },
-  "updated_at": "2026-11-19T05:00:02+00:00"
+  "updated_at": "2026-11-19T06:00:02+00:00"
 }
