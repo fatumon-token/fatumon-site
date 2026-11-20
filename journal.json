@@ -2,12 +2,12 @@
   "signals": [
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "VELVET",
       "first_candle": "down",
       "h1": -14.4,
-      "h24": null,
+      "h24": -11.5,
       "h4": -0.4,
       "status": "real",
       "time_utc": "2026-11-19 11:00"
@@ -1221,5 +1221,5 @@
     "real": 64,
     "total": 101
   },
-  "updated_at": "2026-11-20T11:00:01+00:00"
+  "updated_at": "2026-11-20T12:00:01+00:00"
 }
