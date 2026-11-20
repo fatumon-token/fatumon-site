@@ -14,12 +14,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "BTR",
       "first_candle": "down",
       "h1": -8.4,
-      "h24": null,
+      "h24": -6.5,
       "h4": -5.0,
       "status": "false",
       "time_utc": "2026-11-19 05:15"
@@ -1221,5 +1221,5 @@
     "real": 64,
     "total": 101
   },
-  "updated_at": "2026-11-20T05:00:01+00:00"
+  "updated_at": "2026-11-20T06:00:01+00:00"
 }
