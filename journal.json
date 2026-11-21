@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
-      "coin": "MAGMA",
+      "coin": "BULLA",
       "first_candle": null,
       "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-21 15:45"
+    },
+    {
+      "burst_1h": true,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "MAGMA",
+      "first_candle": "up",
+      "h1": 2.5,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -1243,7 +1255,7 @@
     "false_per_real": 0.58,
     "known": 101,
     "real": 64,
-    "total": 103
+    "total": 104
   },
-  "updated_at": "2026-11-21T15:00:01+00:00"
+  "updated_at": "2026-11-21T16:00:01+00:00"
 }
