@@ -4,9 +4,21 @@
       "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "INX",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-22 16:45"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": null,
       "coin": "BULLA",
       "first_candle": "down",
-      "h1": null,
+      "h1": -4.2,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -50,12 +62,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "BULLA",
       "first_candle": "down",
       "h1": -3.9,
-      "h24": null,
+      "h24": 24.7,
       "h4": 6.9,
       "status": "false",
       "time_utc": "2026-11-21 15:45"
@@ -1303,7 +1315,7 @@
     "false_per_real": 0.58,
     "known": 106,
     "real": 67,
-    "total": 108
+    "total": 109
   },
-  "updated_at": "2026-11-22T16:00:01+00:00"
+  "updated_at": "2026-11-22T17:00:01+00:00"
 }
