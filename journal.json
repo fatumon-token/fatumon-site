@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "INX",
       "first_candle": "up",
       "h1": 0.5,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -1.0,
+      "status": "false",
       "time_utc": "2026-11-22 16:45"
     },
     {
@@ -1311,11 +1311,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 40,
-    "false_per_real": 0.59,
-    "known": 108,
+    "false": 41,
+    "false_per_real": 0.6,
+    "known": 109,
     "real": 68,
     "total": 109
   },
-  "updated_at": "2026-11-22T21:00:01+00:00"
+  "updated_at": "2026-11-22T22:00:01+00:00"
 }
