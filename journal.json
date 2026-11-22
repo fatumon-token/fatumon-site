@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": false,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "INX",
       "first_candle": "up",
-      "h1": null,
+      "h1": 0.5,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -27,13 +27,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": -1.1,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 3.0,
+      "status": "false",
       "time_utc": "2026-11-22 13:30"
     },
     {
@@ -1311,11 +1311,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 39,
-    "false_per_real": 0.58,
-    "known": 106,
+    "false": 40,
+    "false_per_real": 0.6,
+    "known": 107,
     "real": 67,
     "total": 109
   },
-  "updated_at": "2026-11-22T18:00:01+00:00"
+  "updated_at": "2026-11-22T19:00:01+00:00"
 }
