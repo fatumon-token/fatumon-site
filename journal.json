@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-22 13:30"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
@@ -50,12 +62,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "DODOX",
       "first_candle": "down",
       "h1": -8.8,
-      "h24": null,
+      "h24": -9.0,
       "h4": -8.4,
       "status": "real",
       "time_utc": "2026-11-21 13:00"
@@ -1279,7 +1291,7 @@
     "false_per_real": 0.58,
     "known": 104,
     "real": 66,
-    "total": 106
+    "total": 107
   },
-  "updated_at": "2026-11-22T13:00:01+00:00"
+  "updated_at": "2026-11-22T14:00:01+00:00"
 }
