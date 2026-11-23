@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "INX",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-23 19:15"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": true,
@@ -1351,7 +1363,7 @@
     "false_per_real": 0.62,
     "known": 112,
     "real": 69,
-    "total": 112
+    "total": 113
   },
-  "updated_at": "2026-11-23T19:00:02+00:00"
+  "updated_at": "2026-11-23T20:00:02+00:00"
 }
