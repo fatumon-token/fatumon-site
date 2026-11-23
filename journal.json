@@ -1,27 +1,39 @@
 {
   "signals": [
     {
-      "burst_1h": false,
+      "burst_1h": null,
       "burst_24h": null,
       "burst_4h": null,
+      "coin": "BULLA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-23 08:15"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": null,
+      "burst_4h": false,
       "coin": "AVAAI",
       "first_candle": "up",
       "h1": 5.9,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 10.7,
+      "status": "false",
       "time_utc": "2026-11-23 04:00"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "ELSA",
       "first_candle": "down",
       "h1": 0.4,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -1.4,
+      "status": "false",
       "time_utc": "2026-11-23 04:00"
     },
     {
@@ -1335,11 +1347,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 41,
-    "false_per_real": 0.6,
-    "known": 109,
+    "false": 43,
+    "false_per_real": 0.63,
+    "known": 111,
     "real": 68,
-    "total": 111
+    "total": 112
   },
-  "updated_at": "2026-11-23T08:00:02+00:00"
+  "updated_at": "2026-11-23T09:00:02+00:00"
 }
