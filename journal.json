@@ -74,12 +74,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "BULLA",
       "first_candle": "down",
       "h1": -1.9,
-      "h24": null,
+      "h24": 51.5,
       "h4": 8.0,
       "status": "real",
       "time_utc": "2026-11-22 11:00"
@@ -1353,5 +1353,5 @@
     "real": 68,
     "total": 112
   },
-  "updated_at": "2026-11-23T11:00:02+00:00"
+  "updated_at": "2026-11-23T12:00:02+00:00"
 }
