@@ -38,12 +38,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": false,
       "coin": "INX",
       "first_candle": "up",
       "h1": 0.5,
-      "h24": null,
+      "h24": 16.7,
       "h4": -1.0,
       "status": "false",
       "time_utc": "2026-11-22 16:45"
@@ -1353,5 +1353,5 @@
     "real": 69,
     "total": 112
   },
-  "updated_at": "2026-11-23T17:00:02+00:00"
+  "updated_at": "2026-11-23T18:00:02+00:00"
 }
