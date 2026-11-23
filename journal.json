@@ -1,6 +1,30 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "AVAAI",
+      "first_candle": "up",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-23 04:00"
+    },
+    {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "ELSA",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-23 04:00"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -1315,7 +1339,7 @@
     "false_per_real": 0.6,
     "known": 109,
     "real": 68,
-    "total": 109
+    "total": 111
   },
-  "updated_at": "2026-11-23T04:00:02+00:00"
+  "updated_at": "2026-11-23T05:00:02+00:00"
 }
