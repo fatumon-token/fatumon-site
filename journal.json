@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "GUA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-24 15:30"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -1363,7 +1375,7 @@
     "false_per_real": 0.64,
     "known": 113,
     "real": 69,
-    "total": 113
+    "total": 114
   },
-  "updated_at": "2026-11-24T15:00:02+00:00"
+  "updated_at": "2026-11-24T16:00:02+00:00"
 }
