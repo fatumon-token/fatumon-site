@@ -1,25 +1,37 @@
 {
   "signals": [
     {
-      "burst_1h": false,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "GUA",
-      "first_candle": "up",
-      "h1": 1.0,
+      "first_candle": "down",
+      "h1": -6.7,
       "h24": null,
       "h4": null,
       "status": "pending",
-      "time_utc": "2026-11-24 15:30"
+      "time_utc": "2026-11-24 19:30"
     },
     {
       "burst_1h": false,
       "burst_24h": null,
+      "burst_4h": true,
+      "coin": "GUA",
+      "first_candle": "up",
+      "h1": 1.0,
+      "h24": null,
+      "h4": 35.1,
+      "status": "real",
+      "time_utc": "2026-11-24 15:30"
+    },
+    {
+      "burst_1h": false,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "INX",
       "first_candle": "up",
       "h1": 0.9,
-      "h24": null,
+      "h24": -7.0,
       "h4": -0.3,
       "status": "false",
       "time_utc": "2026-11-23 19:15"
@@ -1372,10 +1384,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 44,
-    "false_per_real": 0.64,
-    "known": 113,
-    "real": 69,
-    "total": 114
+    "false_per_real": 0.63,
+    "known": 114,
+    "real": 70,
+    "total": 115
   },
-  "updated_at": "2026-11-24T19:00:02+00:00"
+  "updated_at": "2026-11-24T22:00:02+00:00"
 }
