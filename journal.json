@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": true,
-      "burst_24h": null,
+      "burst_24h": true,
       "burst_4h": true,
       "coin": "GUA",
       "first_candle": "down",
       "h1": -6.7,
-      "h24": null,
+      "h24": -19.3,
       "h4": -6.1,
       "status": "real",
       "time_utc": "2026-11-24 19:30"
@@ -1413,5 +1413,5 @@
     "real": 72,
     "total": 117
   },
-  "updated_at": "2026-11-25T20:00:01+00:00"
+  "updated_at": "2026-11-25T21:00:01+00:00"
 }
