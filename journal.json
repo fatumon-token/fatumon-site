@@ -3,13 +3,13 @@
     {
       "burst_1h": true,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": true,
       "coin": "GUA",
       "first_candle": "down",
       "h1": -6.7,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": -6.1,
+      "status": "real",
       "time_utc": "2026-11-24 19:30"
     },
     {
@@ -1384,10 +1384,10 @@
   "since": "2026-10-25",
   "summary": {
     "false": 44,
-    "false_per_real": 0.63,
-    "known": 114,
-    "real": 70,
+    "false_per_real": 0.62,
+    "known": 115,
+    "real": 71,
     "total": 115
   },
-  "updated_at": "2026-11-24T22:00:02+00:00"
+  "updated_at": "2026-11-25T02:00:02+00:00"
 }
