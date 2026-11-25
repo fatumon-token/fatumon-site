@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "SKYAI",
+      "first_candle": "up",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-25 05:00"
+    },
+    {
       "burst_1h": true,
       "burst_24h": null,
       "burst_4h": true,
@@ -1387,7 +1399,7 @@
     "false_per_real": 0.62,
     "known": 115,
     "real": 71,
-    "total": 115
+    "total": 116
   },
-  "updated_at": "2026-11-25T05:00:01+00:00"
+  "updated_at": "2026-11-25T06:00:01+00:00"
 }
