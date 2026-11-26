@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "BULLA",
-      "first_candle": null,
+      "first_candle": "down",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -26,12 +26,12 @@
     },
     {
       "burst_1h": false,
-      "burst_24h": null,
+      "burst_24h": false,
       "burst_4h": false,
       "coin": "PHAROS",
       "first_candle": "up",
       "h1": -3.5,
-      "h24": null,
+      "h24": -11.1,
       "h4": -1.3,
       "status": "false",
       "time_utc": "2026-11-25 07:30"
@@ -1437,5 +1437,5 @@
     "real": 72,
     "total": 119
   },
-  "updated_at": "2026-11-26T08:00:01+00:00"
+  "updated_at": "2026-11-26T09:00:01+00:00"
 }
