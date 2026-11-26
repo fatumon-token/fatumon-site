@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "BULLA",
+      "first_candle": null,
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-26 07:45"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -1423,7 +1435,7 @@
     "false_per_real": 0.64,
     "known": 118,
     "real": 72,
-    "total": 118
+    "total": 119
   },
-  "updated_at": "2026-11-26T07:00:01+00:00"
+  "updated_at": "2026-11-26T08:00:01+00:00"
 }
