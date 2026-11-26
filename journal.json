@@ -1,6 +1,18 @@
 {
   "signals": [
     {
+      "burst_1h": null,
+      "burst_24h": null,
+      "burst_4h": null,
+      "coin": "AIOT",
+      "first_candle": "down",
+      "h1": null,
+      "h24": null,
+      "h4": null,
+      "status": "pending",
+      "time_utc": "2026-11-26 14:00"
+    },
+    {
       "burst_1h": false,
       "burst_24h": null,
       "burst_4h": false,
@@ -1435,7 +1447,7 @@
     "false_per_real": 0.65,
     "known": 119,
     "real": 72,
-    "total": 119
+    "total": 120
   },
-  "updated_at": "2026-11-26T14:00:01+00:00"
+  "updated_at": "2026-11-26T15:00:01+00:00"
 }
