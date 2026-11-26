@@ -3,13 +3,13 @@
     {
       "burst_1h": false,
       "burst_24h": null,
-      "burst_4h": null,
+      "burst_4h": false,
       "coin": "AIOT",
       "first_candle": "down",
       "h1": -0.6,
       "h24": null,
-      "h4": null,
-      "status": "pending",
+      "h4": 7.3,
+      "status": "false",
       "time_utc": "2026-11-26 14:00"
     },
     {
@@ -1443,11 +1443,11 @@
   ],
   "since": "2026-10-25",
   "summary": {
-    "false": 47,
-    "false_per_real": 0.65,
-    "known": 119,
+    "false": 48,
+    "false_per_real": 0.67,
+    "known": 120,
     "real": 72,
     "total": 120
   },
-  "updated_at": "2026-11-26T18:00:01+00:00"
+  "updated_at": "2026-11-26T19:00:01+00:00"
 }
