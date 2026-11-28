@@ -1,12 +1,12 @@
 {
   "signals": [
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "EVAA",
       "first_candle": "up",
-      "h1": null,
+      "h1": 21.7,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -1473,5 +1473,5 @@
     "real": 72,
     "total": 122
   },
-  "updated_at": "2026-11-28T12:00:02+00:00"
+  "updated_at": "2026-11-28T13:00:02+00:00"
 }
