@@ -5,7 +5,7 @@
       "burst_24h": null,
       "burst_4h": null,
       "coin": "EVAA",
-      "first_candle": null,
+      "first_candle": "up",
       "h1": null,
       "h24": null,
       "h4": null,
@@ -13,12 +13,12 @@
       "time_utc": "2026-11-28 10:45"
     },
     {
-      "burst_1h": null,
+      "burst_1h": true,
       "burst_24h": null,
       "burst_4h": null,
       "coin": "INX",
       "first_candle": "down",
-      "h1": null,
+      "h1": -11.3,
       "h24": null,
       "h4": null,
       "status": "pending",
@@ -1473,5 +1473,5 @@
     "real": 72,
     "total": 122
   },
-  "updated_at": "2026-11-28T11:00:01+00:00"
+  "updated_at": "2026-11-28T12:00:02+00:00"
 }
